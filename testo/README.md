@@ -9,6 +9,7 @@
   - [Come si installa](#come-si-installa)
   - [Cheat-sheet](#cheat-sheet)
     - [La versione fronte retro a cura di Gianni Vitrano](#la-versione-fronte-retro-a-cura-di-gianni-vitrano)
+  - [Cosa c'è di nuovo nella release 2](#cosa-cè-di-nuovo-nella-release-2)
   - [Come si usa](#come-si-usa)
     - [Un esempio di apertura di un file grande](#un-esempio-di-apertura-di-un-file-grande)
     - [Navigare tra i dati](#navigare-tra-i-dati)
@@ -113,6 +114,24 @@ Abbiamo tradotto in italiano il *cheat-sheet* di VisiData, creato da Jeremy Sing
 [**Gianni Vitrano**](https://twitter.com/gbvitrano) di [OpenDataSicilia](https://twitter.com/opendatasicilia) a partire da questo cheat-sheet, ha creato la versione da stampare [fronte retro a "libretto"](./risorse/cheat-sheet_DaStampareFronteRetro_di_GianniVitrano.pdf). Grazie Gianni!
 
 [`torna su`](#indice)
+
+
+## Cosa c'è di nuovo nella release 2
+
+- Split screen
+- json roundtrip
+- add .vdj for cmdlog in jsonl format
+- Every sheet has its own CommandLog
+- vls (along with vping and vtop)
+- Move deferred changes into its own plugin
+- Index into sub-sheets from command line
+- Alt+ layer for easier page-switching.
+- Undo/redo for modifying commands
+- Deferred changes
+- Multi-line rows
+- Range binning for numeric columns on frequency and pivot tables
+- Plugin framework
+- Lots more changes
 
 
 ## Come si usa
