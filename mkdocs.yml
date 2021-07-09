@@ -158,7 +158,7 @@ extra_css:
 ## Page tree
 nav:
     - Home: index.md
-    - Guida VisiData: guida.md 
+    - Guida VisiData: guida/guida.md 
     - Dieci modi di usare visidata: dieci_modi_di_usare_visidata.md  
     - Come salvare un insieme di operazioni e applicarle come modello ad altri file: salvare_procedura_da_applicare.md  
     - Ondata: "https://ondata.it/"   
