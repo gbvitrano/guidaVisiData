@@ -2933,13 +2933,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #589632;
-  border-color: #589632;
+  background-color: #c4e6fa;
+  border-color: #c4e6fa;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f18d36;
-  border-color: #f18d36 ;
+  background-color: #000c50;
+  border-color: #000c50 ;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -10948,7 +10948,7 @@ header.masthead {
   padding-bottom: 4rem;
   text-align: center;
   color: #fff;
- background-image:url(../imgs/EstateGISopendata_website_mod.png);
+ background-image:url(../imgs/logo_visidata_600.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11050,8 +11050,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 } 
 	/* Sfondo QGIS*/
 	
-	.md-main { background-image:url(../imgs/qsfondo_800.png)!important; background-repeat: no-repeat!important;  background-position: center center!important;
-    background-size: 80%!important;  background-attachment: fixed !important;  -webkit-backface-visibility: hidden !important; /*background: #fff!important;*/}
 	
 	.md-content {display: none!important;}
 	
