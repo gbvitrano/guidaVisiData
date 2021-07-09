@@ -217,3 +217,27 @@ max-height:100px;
 	
  /*no pubblicità */
  [data-ea-publisher].loaded, [data-ea-type].loaded {display: none!important; }	
+ 
+ 
+element.style {
+}
+.md-typeset blockquote {
+    border-left: .2rem solid var(--md-default-fg-color--lighter);
+    color: var(--md-default-fg-color--light);
+    display: flow-root;
+    padding-left: .6rem;
+}
+.md-typeset blockquote, .md-typeset dl, .md-typeset figure, .md-typeset ol, .md-typeset pre, .md-typeset ul {
+    margin: 1em 0;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
