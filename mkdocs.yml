@@ -1,13 +1,13 @@
 ## Project information
-site_name: Dagli OpenData all&rsquo;OpenSource&#58; Lavorare in QGIG con le mappe catastali
+site_name: VisiData: il coltellino svizzero per i dati, che probabilmente non conosci
 site_url: https://github.com/gbvitrano/workshop-estate-gis-2021#piattaforme-e-software
-site_description: Obiettivo di questo workshop è quello di evidenziare le potenzialità delle analisi geografiche usando opendata e software Open Source. Realizzeremo un progetto QGIS utilizzando, come fonte dei dati, il WMS dell'AdE e vedremo come aggiungere il servizio WMS, come estrarre i dati esposti usando il filed calc, e infine come digitalizzare velocemente le particelle catastali usando vari plugin.
-site_author: Salvatorew Fiandaca
+site_description: VisiData è un fantastico strumento open source per esplorare e manipolare dati. Mette insieme la chiarezza di un foglio di calcolo, con l'efficienza del terminale e la potenza di Python, in una utility leggera in grado di gestire milioni di righe con facilità.
+site_author: Andrea Borruso
 
 ## Repository
-repo_name: workshop-estate-gis-2021
-repo_url: https://github.com/gbvitrano/workshop-estate-gis-2021/
-edit_uri: edit/main/docs/ #disables edit button
+repo_name: La guida VisiData
+repo_url: https://github.com/gbvitrano/guidaVisiData
+edit_uri: edit/master/docs/ #disables edit button
 
 # Copyright
 copyright: <a href="https://twitter.com/ondatait" title="@ondatait" target="_blank">By @ondatait </a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/!" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribution-ShareAlike 4.0 licence (CC BY-SA)" target="_blank" class="link-dark text-decoration-none">Licenza CC-BY-SA-4.0</a>
