@@ -184,7 +184,7 @@ div.doc-contents:not(.first) {
   justify-content: center;
   height: 1.75rem;
   width: 1.75rem;
-  background-color: #5896329e;
+  background-color: #021b449e;
   color: #fff;
   border-radius: 100%;
   font-size: 1.1rem;
@@ -194,7 +194,7 @@ div.doc-contents:not(.first) {
   margin-right: 0;}
 
 .social-icons .social-icon:hover {
-  background-color: #f18d36;}
+  background-color: #c4e6fa;}
   
  /* scrollbar*/
 
