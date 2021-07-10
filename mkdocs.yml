@@ -158,7 +158,26 @@ extra_css:
 ## Page tree
 nav:
     - Home: index.md
-    - Guida VisiData: guida/guida.md 
+    - Guida VisiData:
+        - Intro: guida/guida.md 
+        - Lavorare sulle righe: guida/lavorare_sulle_righe.md 
+        - Lavorare sulle colonne: guida/lavorare_sulle_colonne.md 
+        - Lavorare sulle celle: guida/lavorare_sulle_celle.md 
+        - Ordinare e filtrare: guida/ordinare_filtrare.md 
+        - Riepilogo dei dati: guida/riepilogo_dati.md 
+        - Salvare un foglio: guida/salvare_foglio.md 
+        - Fare il redirect dell&#180;output verso lo stdout: guida/stdout.md     
+        - Fare JOIN tra tabelle: guida/join.md 
+        - Concatenare tabelle: guida/concatenare.md 
+        - Tabelle Pivot: guida/pivot.md 
+        - Creare un grafico di dispersione (scatter plot): guida/scatter.md 
+        - Moduli Python: guida/python.md 
+        - Salvare un flusso di lavoro: guida/flusso.md    
+        - Soluzione problemi: guida/sol_pro.md
+        - Ricette: guida/ricette.md
+        - Fare proposte e/o Chiedere supporto: guida/guida.md
+        - Note finali: guida/note.md        
+        - URL consigliati: guida/url.md       
     - Dieci modi di usare visidata: dieci_modi_di_usare_visidata.md  
     - Come salvare un insieme di operazioni e applicarle come modello ad altri file: salvare_procedura_da_applicare.md  
     - Ondata: "https://ondata.it/"   
