@@ -37,8 +37,8 @@ extra:
       link: ../feed_rss_created.xml
       name: Feed RSS
     - icon: fontawesome/solid/file-pdf
-      link: ../Guida_VisiDatapdf
-      name: Scarica il file PDF (xx mb)
+      link: ../Guida_VisiData.pdf
+      name: Scarica il file PDF (1.5 mb)
   analytics:
     provider: google
     property: UA-122084242-1
