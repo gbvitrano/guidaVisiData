@@ -59,13 +59,13 @@ theme:
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/weather-sunny
+        icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
       primary: black
       accent: indigo
       toggle:
-        icon: material/weather-night
+        icon: material/weather-sunny
         name: Switch to light mode
   font:
     text: Lato
@@ -73,6 +73,7 @@ theme:
   favicon: imgs/favicon.ico
   icon:
     logo: fontawesome/solid/book-reader
+    repo: fontawesome/brands/github
 # logo: imgs/logo_white.svg
 plugins:
 - search
