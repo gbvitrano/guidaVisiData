@@ -176,6 +176,10 @@ sup {
 }
 
 /* link home*/
+.home a:link{color: #4051b5;	text-decoration:none;}
+.home a:visited {	color: #4051b5; text-decoration:none;}
+.home a:hover {color: #4051b5; text-decoration:underline; } 
+
 /*
 a {
   color: #4051b5;
