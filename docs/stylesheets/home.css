@@ -11086,3 +11086,16 @@ table {
 .home a:link{color: #4051b5!important;	text-decoration:none;}
 .home a:visited {	color: #4051b5!important; text-decoration:none;}
 .home a:hover {color: #4051b5!important; text-decoration:underline; } 
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    background: #f9f9f9; 
+    border-left: 4px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}	  
