@@ -25,7 +25,7 @@
         <small>{{ config.copyright }}</small><br />
     {% endif %}
 	<br>
-	<a href="#" title="hfcqgis.opendatasicilia.it" class=".immagonobox"><img class=".immagonobox" src="../imgs/logo_visidata_600.png" width="auto"/></a>
+	<a href="#" title="hfcqgis.opendatasicilia.it" class=".immagonobox"><img src="../imgs/logo_visidata_600.png" width="350"/></a>
 </p>
 
 
