@@ -20,7 +20,7 @@ Per generare il grafico basterà seguire i seguenti passi:
 
 In output si avrà qualcosa come quella di sotto
 
-![](./imgs/scatterPlot.png)
+![](../imgs/scatterPlot.png)
 
 
 

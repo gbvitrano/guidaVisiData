@@ -14,11 +14,11 @@ Oppure posso farlo a partire da un "foglio delle frequenze" (vedi [qui](#il-fogl
 - si pigia `Shift+f`, che mi da in _output_ il conteggio dei valori distinti per marca (sono più di un milione di record, ci vorrà un po' di tempo);
 - si scorre sino alla riga che contiene la marca che si vuole filtrare;
 
-![](./imgs/11_filtro.png)
+![](../imgs/11_filtro.png)
 
 - si pigia `Invio` e si avrà una tabella filtrata, con i record relativi a quella marca per l'Abruzzo.
 
-![](./imgs/12_filtro.png)
+![](../imgs/12_filtro.png)
 
 Dal foglio delle frequenze è possibile filtrare su più di un elemento:
 
@@ -31,7 +31,7 @@ Dal foglio delle frequenze è possibile filtrare su più di un elemento:
 È possibile **filtrare** righe tramite un'**`espressione` Python** ([qui](https://docs.python.org/3/reference/expressions.html) la documentazione ufficiale e [qui](https://realpython.com/python-operators-expressions/) una guida che consiglio).
 Se ad esempio dalla tabella di sotto si volessero soltanto le province con più di 350.000 abitanti
 
-![](./imgs/28_filtro.png)
+![](../imgs/28_filtro.png)
 
 basterebbe:
 
@@ -41,7 +41,7 @@ basterebbe:
 
 In output si avrà la selezione di tutte le righe che risolvono l'espressione scritta.
 
-![](./imgs/29_filtro.png)
+![](../imgs/29_filtro.png)
 
 Note:
 
@@ -54,7 +54,7 @@ Note:
 
 Usando [questo](https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv) file CSV (by [PCM-DPC](https://github.com/pcm-dpc/COVID-19)), se ad esempio dalla tabella di sotto si volessero soltanto i record con giorno 29:
 
-![](./imgs/30_filtro_datetime_01.png)
+![](../imgs/30_filtro_datetime_01.png)
 
 basterebbe:
 
@@ -64,7 +64,7 @@ basterebbe:
 
 In output si avrà la selezione di tutte le righe che risolvono l'espressione scritta.
 
-![](./imgs/30_filtro_datetime_02.png)
+![](../imgs/30_filtro_datetime_02.png)
 
 
 Osservazioni: oltre a `day` è possibile usare: `month`, `year`e `hour`

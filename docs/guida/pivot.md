@@ -6,7 +6,7 @@ Ecco ad esempio come creare quella che da conto del numero di mezzi per marca, s
 - si va poi nella colonna `provincia_residenza` e si pigia `Shift+w`;
 - si ottiene la tabella pivot desiderata.
 
-![](./imgs/24_pivot.png)
+![](../imgs/24_pivot.png)
 
 Se invece del conteggio delle occorrenze si volesse (a partire da un altro campo) calcolare un altro dato aggregato  - come ad esempio l'età media per marca e provincia - si può procedere in questo modo:
 
@@ -16,7 +16,7 @@ si va di nuovo nella colonna `provincia_residenza` e si pigia `Shift+w`.
 
 In output, per ogni provincia, si avrà quindi la media desiderata.
 
-![](./imgs/27_pivot.png)
+![](../imgs/27_pivot.png)
 
 
 

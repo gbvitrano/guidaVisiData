@@ -12,7 +12,7 @@ In VisiData esistono i cosiddetti meta-fogli (vedi [sopra](#i-fogli)): uno di qu
 
 A partire dalla visualizzazione di una tabella, si apre con `Shift+c`.
 
-![](./imgs/05_foglioColonne.png)
+![](../imgs/05_foglioColonne.png)
 
 È una delle caratteristiche di VisiData che consente una rapida prima lettura del dato, che personalmente uso anche ad esempio per costruire brevi relazioni che contengono schema dati.
 
@@ -33,7 +33,7 @@ Di *default* i campi floating sono renderizzati con due decimali (la formattazio
 
 Per modificare la cosa si può aprire il foglio delle colonne (`SHIFT+c`) e modificare il valore di formattazione delle colonna `fmtstr` (vedi sotto).
 
-![](./imgs/formatFloating.png)
+![](../imgs/formatFloating.png)
 
 Per passare a tre decimali per un campo, basterà ad esempio modificare la cella della colonna di interesse da `%.02f` a `%.03f` (in edit di cella si va con il tasto `e`).<br>
 Se si vuole fare su più colonne:
@@ -118,7 +118,7 @@ Ovvero (`FieldA`) è uguale `FieldB` se `FieldA` non contiene nulla, altrimenti 
 
 È possibile avere restituito, per una colonna, il risultato di uno dei calcoli di aggregazione disponibili:
 
-![](./imgs/operatoriAggregazione.png)
+![](../imgs/operatoriAggregazione.png)
 
 Ad esempio per avere la somma dei valori di una colonna con numeri interi:
 
@@ -145,15 +145,15 @@ Il foglio delle colonne oltre a dare una visione di insieme, consente di fare de
 
 Ad esempio a partire dal Parco Circolante dei veicoli dell'Abruzzo, il foglio colonne (`Shift+c`) appare in questo modo.
 
-![](./imgs/06_foglioColonne.png)
+![](../imgs/06_foglioColonne.png)
 
 Se si vuole impostare a "numero intero" le colonne `progressivo` e `eta_intestatario`, bisognerà prima selezionarle con `s`.
 
-![](./imgs/07_foglioColonne.png)
+![](../imgs/07_foglioColonne.png)
 
 Poi premere `g#`.
 
-![](./imgs/08_foglioColonne.png)
+![](../imgs/08_foglioColonne.png)
 
 #### Creare una nuova colonna
 
@@ -175,7 +175,7 @@ Ad esempio potrebbe essere utile creare una colonna vero/falso, per tutte le aut
 
 In output qualcosa come quella di sotto, con la nuova colonna risultato di un'espressione Python.
 
-![](./imgs/15_nuoveColonne.png)
+![](../imgs/15_nuoveColonne.png)
 
 ##### Nuove colonne come risultato di splitting
 
@@ -189,7 +189,7 @@ Se si vuole suddividerla in due colonne (data e orario), si può procedere in qu
 
 Come output si avrà qualcosa come quella di sotto: due colonne frutto della divisione in più colonne, sfruttando come separatore lo spazio.
 
-![](./imgs/16_nuoveColonne.png)
+![](../imgs/16_nuoveColonne.png)
 
 ##### Nuove colonne come risultato di cattura e estrazione
 
@@ -206,7 +206,7 @@ Per creare una nuova colonna a partire dalla definizione di un'espressione regol
 
 E si ottiene qualcosa come quella di sotto:
 
-![](./imgs/17_nuoveColonne.png)
+![](../imgs/17_nuoveColonne.png)
 
 #### Trasformare una colonna tramite espressione regolare (trova e sostituisci)
 
@@ -220,7 +220,7 @@ Su ogni colonna è possibile fare delle trasformazioni basate su espressioni reg
 
 Il risultato sarà qualcosa come quella di sotto:
 
-![](./imgs/25_trasforma.png)
+![](../imgs/25_trasforma.png)
 
 Questo è un "trova e sostituisci" per colonna.
 
@@ -230,6 +230,6 @@ Questa è una delle funzioni che uso di più ed è un'altra gran bell'idea. A pa
 
 Se per esempio a partire dal Parco Circolante dei veicoli dell'Abruzzo, si volesse avere un'idea sulla distribuzione per "marca", basta navigare in vista tabella sino a quella colonna e poi pigiare `Shift+f` e avere qualcosa come quella di sotto.
 
-![](./imgs/09_tabellaFrequenze.png)
+![](../imgs/09_tabellaFrequenze.png)
 
 I dati sono ordinati per conteggio ed emerge subito come una famosa marca nazionale da sola faccia 1/4 del campione. Così come emerge che c'è un 5% di elementi in cui la marca non è definita e anche questa è un'informazione che ci potrebbe consentire da subito di prendere delle decisioni. <br>Molto comoda anche la colonna `histogram` che da visivamente in modo molto diretto un'idea del rapporto tra i numeri descritti in tabella.

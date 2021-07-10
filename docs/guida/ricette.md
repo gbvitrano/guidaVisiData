@@ -8,7 +8,7 @@ La pagina di esempio è:<br><https://web.archive.org/web/20190618071304/http://w
 
 Questa è composta da diverse tabelle.
 
-![](./imgs/table.png)
+![](../imgs/table.png)
 
 Quella di interesse è l'unica composta da più di 7 colonne, e la query XPATH per estrarla è `//table[count(tr/td)>7]`.
 
@@ -36,7 +36,7 @@ vd -f html
 
 Come risultato si aprirà la finestra di sotto. Per aprire la tabella sarà necessario premere `INVIO` e poi si potrà salvare la tabella in CSV (o altri formati) digitando `CTRL+ s`.
 
-![](./imgs/htmltable.png)
+![](../imgs/htmltable.png)
 
 Se si vuole inserire nello script anche la procedura di salvataggio, bisogna modificare lo script in questo modo:
 

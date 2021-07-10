@@ -11,7 +11,7 @@ I tasti principali di selezione sono:
 - `gu`, per deselezionare tutte le righe;
 - `gt`, per invertire i criteri di selezione per tutte le righe.
 
-![](./imgs/03_selezione.png)
+![](../imgs/03_selezione.png)
 
 #### Selezione di righe tramite espressione regolare
 
@@ -31,7 +31,7 @@ Se ad esempio:
 
 ... si ottiene qualcosa come quella di sotto.
 
-![](./imgs/04_selezione.png)
+![](../imgs/04_selezione.png)
 
 #### Selezione di righe tramite espressioni Python
 

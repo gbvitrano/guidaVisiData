@@ -44,11 +44,11 @@ Su Windows non c'è ancora un supporto diretto. È però utilizzabile da chi ha 
 
 Abbiamo tradotto in italiano il *cheat-sheet* di VisiData, creato da Jeremy Singer Vine, disponibile in [HTML](https://jsvine.github.io/visidata-cheat-sheet/it/) e [PDF](https://jsvine.github.io/visidata-cheat-sheet/downloads/visidata-cheat-sheet.it.pdf).
 
-[![](./imgs/cheatSheetVisiData.png)](https://jsvine.github.io/visidata-cheat-sheet/it/)
+![](../imgs/cheatSheetVisiData.png)](https://jsvine.github.io/visidata-cheat-sheet/it/)
 
 ### La versione fronte retro a cura di Gianni Vitrano
 
-[**Gianni Vitrano**](https://twitter.com/gbvitrano) di [OpenDataSicilia](https://twitter.com/opendatasicilia) a partire da questo cheat-sheet, ha creato la versione da stampare [fronte retro a "libretto"](./risorse/cheat-sheet_DaStampareFronteRetro_di_GianniVitrano.pdf). Grazie Gianni!
+[**Gianni Vitrano**](https://twitter.com/gbvitrano) di [OpenDataSicilia](https://twitter.com/opendatasicilia) a partire da questo cheat-sheet, ha creato la versione da stampare [fronte retro a "libretto"](../risorse/cheat-sheet_DaStampareFronteRetro_di_GianniVitrano.pdf). Grazie Gianni!
 
 
 
@@ -82,7 +82,7 @@ Con una regione "piccola" come questa si va già oltre il limite di Calc, che è
 
 Con **VisiData** lancio `vd parco_circolante_Abruzzo.csv` e lo visualizzo **in 1 secondo**. C'è il "trucco", che è  invero una delle buone scelte del progettista: il file viene aperto in modo asincrono, caricandone subito una porzione navigabile. In basso a destra (vedi sotto) viene dato conto della percentuale di avanzamento che porterà alla piena apertura (meno di 15 secondi).
 
-![](./imgs/01_vdApertura.png)
+![](../imgs/01_vdApertura.png)
 
 Questo essere "subito pronto" lo rende uno strumento di grande comodità, che l'ha portato a essere uno dei miei quotidiani.<br>
 Ribadisco però ancora un volta che il "grande" e la valutazione del tempo dipendono dagli obiettivi che si hanno, dalle proprie conoscenze di base e dall'_hardware/software_ che si ha a disposizione.
@@ -131,7 +131,7 @@ In VisiData ci sono tre tipi di fogli:
 
 Il "foglio dei fogli" si apre con `Shift + s` e fornisce l'elenco (e alcune informazioni correlate) di tutti i fogli aperti. Selezionandone uno e pigiando `Invio`, quest'ultimo si aprirà.
 
-![](./imgs/02_foglioDeiFogli.png)
+![](../imgs/02_foglioDeiFogli.png)
 
 Per rinominarne uno dal "foglio dei fogli", basta selezionarlo, premere `e` e inserire il nuovo nome e poi dare `Invio`. O in alternativa, se si è davanti al foglio che si vuole rinominare, premere la `barra spaziatrice`, scrivere `rename-sheet`, digitare il nuovo nome e infine pigiare su `Invio`.
 
@@ -152,7 +152,7 @@ I tasti principali di selezione sono:
 - `gu`, per deselezionare tutte le righe;
 - `gt`, per invertire i criteri di selezione per tutte le righe.
 
-![](./imgs/03_selezione.png)
+![](../imgs/03_selezione.png)
 
 #### Selezione di righe tramite espressione regolare
 
@@ -172,7 +172,7 @@ Se ad esempio:
 
 ... si ottiene qualcosa come quella di sotto.
 
-![](./imgs/04_selezione.png)
+![](../imgs/04_selezione.png)
 
 
 
@@ -250,7 +250,7 @@ In VisiData esistono i cosiddetti meta-fogli (vedi [sopra](#i-fogli)): uno di qu
 
 A partire dalla visualizzazione di una tabella, si apre con `Shift+c`.
 
-![](./imgs/05_foglioColonne.png)
+![](../imgs/05_foglioColonne.png)
 
 È una delle caratteristiche di VisiData che consente una rapida prima lettura del dato, che personalmente uso anche ad esempio per costruire brevi relazioni che contengono schema dati.
 
@@ -273,7 +273,7 @@ Di *default* i campi floating sono renderizzati con due decimali (la formattazio
 
 Per modificare la cosa si può aprire il foglio delle colonne (`SHIFT+c`) e modificare il valore di formattazione delle colonna `fmtstr` (vedi sotto).
 
-![](./imgs/formatFloating.png)
+![](../imgs/formatFloating.png)
 
 Per passare a tre decimali per un campo, basterà ad esempio modificare la cella della colonna di interesse da `%.02f` a `%.03f` (in edit di cella si va con il tasto `e`).<br>
 Se si vuole fare su più colonne:
@@ -368,7 +368,7 @@ Ovvero (`FieldA`) è uguale `FieldB` se `FieldA` non contiene nulla, altrimenti 
 
 È possibile avere restituito, per una colonna, il risultato di uno dei calcoli di aggregazione disponibili:
 
-![](./imgs/operatoriAggregazione.png)
+![](../imgs/operatoriAggregazione.png)
 
 Ad esempio per avere la somma dei valori di una colonna con numeri interi:
 
@@ -397,15 +397,15 @@ Il foglio delle colonne oltre a dare una visione di insieme, consente di fare de
 
 Ad esempio a partire dal Parco Circolante dei veicoli dell'Abruzzo, il foglio colonne (`Shift+c`) appare in questo modo.
 
-![](./imgs/06_foglioColonne.png)
+![](../imgs/06_foglioColonne.png)
 
 Se si vuole impostare a "numero intero" le colonne `progressivo` e `eta_intestatario`, bisognerà prima selezionarle con `s`.
 
-![](./imgs/07_foglioColonne.png)
+![](../imgs/07_foglioColonne.png)
 
 Poi premere `g#`.
 
-![](./imgs/08_foglioColonne.png)
+![](../imgs/08_foglioColonne.png)
 
 
 
@@ -431,7 +431,7 @@ In output qualcosa come quella di sotto, con la nuova colonna risultato di un'es
 
 
 
-![](./imgs/15_nuoveColonne.png)
+![](../imgs/15_nuoveColonne.png)
 
 ##### Nuove colonne come risultato di splitting
 
@@ -445,7 +445,7 @@ Se si vuole suddividerla in due colonne (data e orario), si può procedere in qu
 
 Come output si avrà qualcosa come quella di sotto: due colonne frutto della divisione in più colonne, sfruttando come separatore lo spazio.
 
-![](./imgs/16_nuoveColonne.png)
+![](../imgs/16_nuoveColonne.png)
 
 
 
@@ -464,7 +464,7 @@ Per creare una nuova colonna a partire dalla definizione di un'espressione regol
 
 E si ottiene qualcosa come quella di sotto:
 
-![](./imgs/17_nuoveColonne.png)
+![](../imgs/17_nuoveColonne.png)
 
 
 
@@ -480,7 +480,7 @@ Su ogni colonna è possibile fare delle trasformazioni basate su espressioni reg
 
 Il risultato sarà qualcosa come quella di sotto:
 
-![](./imgs/25_trasforma.png)
+![](../imgs/25_trasforma.png)
 
 Questo è un "trova e sostituisci" per colonna.
 
@@ -492,7 +492,7 @@ Questa è una delle funzioni che uso di più ed è un'altra gran bell'idea. A pa
 
 Se per esempio a partire dal Parco Circolante dei veicoli dell'Abruzzo, si volesse avere un'idea sulla distribuzione per "marca", basta navigare in vista tabella sino a quella colonna e poi pigiare `Shift+f` e avere qualcosa come quella di sotto.
 
-![](./imgs/09_tabellaFrequenze.png)
+![](../imgs/09_tabellaFrequenze.png)
 
 I dati sono ordinati per conteggio ed emerge subito come una famosa marca nazionale da sola faccia 1/4 del campione. Così come emerge che c'è un 5% di elementi in cui la marca non è definita e anche questa è un'informazione che ci potrebbe consentire da subito di prendere delle decisioni. <br>Molto comoda anche la colonna `histogram` che da visivamente in modo molto diretto un'idea del rapporto tra i numeri descritti in tabella.
 
@@ -526,11 +526,11 @@ Oppure posso farlo a partire da un "foglio delle frequenze" (vedi [qui](#il-fogl
 - si pigia `Shift+f`, che mi da in _output_ il conteggio dei valori distinti per marca (sono più di un milione di record, ci vorrà un po' di tempo);
 - si scorre sino alla riga che contiene la marca che si vuole filtrare;
 
-![](./imgs/11_filtro.png)
+![](../imgs/11_filtro.png)
 
 - si pigia `Invio` e si avrà una tabella filtrata, con i record relativi a quella marca per l'Abruzzo.
 
-![](./imgs/12_filtro.png)
+![](../imgs/12_filtro.png)
 
 Dal foglio delle frequenze è possibile filtrare su più di un elemento:
 
@@ -545,7 +545,7 @@ Dal foglio delle frequenze è possibile filtrare su più di un elemento:
 È possibile **filtrare** righe tramite un'**`espressione` Python** ([qui](https://docs.python.org/3/reference/expressions.html) la documentazione ufficiale e [qui](https://realpython.com/python-operators-expressions/) una guida che consiglio).
 Se ad esempio dalla tabella di sotto si volessero soltanto le province con più di 350.000 abitanti
 
-![](./imgs/28_filtro.png)
+![](../imgs/28_filtro.png)
 
 basterebbe:
 
@@ -555,7 +555,7 @@ basterebbe:
 
 In output si avrà la selezione di tutte le righe che risolvono l'espressione scritta.
 
-![](./imgs/29_filtro.png)
+![](../imgs/29_filtro.png)
 
 Note:
 
@@ -570,7 +570,7 @@ Note:
 
 Usando [questo](https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv) file CSV (by [PCM-DPC](https://github.com/pcm-dpc/COVID-19)), se ad esempio dalla tabella di sotto si volessero soltanto i record con giorno 29:
 
-![](./imgs/30_filtro_datetime_01.png)
+![](../imgs/30_filtro_datetime_01.png)
 
 basterebbe:
 
@@ -580,7 +580,7 @@ basterebbe:
 
 In output si avrà la selezione di tutte le righe che risolvono l'espressione scritta.
 
-![](./imgs/30_filtro_datetime_02.png)
+![](../imgs/30_filtro_datetime_02.png)
 
 
 Osservazioni: oltre a `day` è possibile usare: `month`, `year`e `hour`
@@ -624,7 +624,7 @@ Uno dei modi per avere un riepilogo è usare il foglio delle frequenze (vedi [qu
 
 È possibile generare un foglio delle frequenze anche basato su più colonne. Per farlo si impostano come colonne chiave ([qui](#come-definire-una-colonna-chiave) come fare) quelle che si vogliono trasformare in "foglio delle frequenze", e poi si pigia `g+Shift+f`. Qui sotto ad esempio un riepilogo per le coppie univoche di `destinazione/alimentazione`.
 
-![](./imgs/13_riepilogo.png)
+![](../imgs/13_riepilogo.png)
 
 
 
@@ -634,7 +634,7 @@ I fogli di frequenza, oltre al conteggio per valori distinti, possono contenere 
 
 Ad esempio per ogni provincia si può avere restituito la distribuzione di età per quartile e scoprire che il 50% del campione è compreso nella fascia di età tra i 18 e circa i 55 anni.
 
-![](./imgs/10_tabellaFrequenze.png)
+![](../imgs/10_tabellaFrequenze.png)
 
 Per aggiungere l'aggregatore `q4` al foglio delle frequenze, bisogna seguire questi passi:
 
@@ -651,7 +651,7 @@ Inizierà da subito il calcolo (che non è immediato, sono più di un milione di
 Per avere una visione a "volo d'uccello" sull'intera tabella esiste il comando `Shift+i`, che restituisce un riepilogo statistico per tutte le colonne.<br>
 Se prima di lanciarlo si definiscono correttamente i campi (ad esempio i numerici, come numerici), verranno eseguiti correttamente anche i calcoli per `min`, `max`, `median`, `mean`, `stdev`.
 
-![](./imgs/14_riepilogo.png)
+![](../imgs/14_riepilogo.png)
 
 Questa è un'altra _feature_ di grande comodità (presente in molte applicazione e ambienti per analisi dati), che verrà usata molto da chi lavorerà con VisiData.
 
@@ -698,17 +698,17 @@ Si può fare in questo modo:
 - si va sulla colonna `provincia_residenza`;
 - si calcola il foglio delle frequenze pigiando `Shift+f` e si ottiene
 
-![](./imgs/18_join.png)
+![](../imgs/18_join.png)
 
 - si rinomina questo foglio frequenze premendo la barra spaziatrice, scrivendo il comando `rename-sheet` e dando poi `Invio`. E poi inserendo il nome nuovo (ad esempio `mezziProvincia`);
 - si apre la tabella con i dati sulla popolazione per provincia, pigiando `o`, scrivendo `popolazioneAbruzzo.tsv` (che è il nome del file) e pigiando `Invio` (NOTA BENE si può scrivere anche soltanto `popo` e poi pigiare `TAB` e il nome del file verrà autocompletato). Si otterrà
 
-![](./imgs/19_join.png)
+![](../imgs/19_join.png)
 
 - si va nella colonna `Provincia` e si preme `!` per impostarla come colonna chiave. Il JOIN in VisiData viene fatto tra colonne chiave;
 - si apre il "foglio dei fogli" con `Shift+s` e si visualizzerà qualcosa come;
 
-![](./imgs/20_join.png)
+![](../imgs/20_join.png)
 
 - si va nella riga che contiene lo *sheet* `popolazioneAbruzzo` e si pigia <kbd>INVIO</kbd>;
 - si va di nuovo nella colonna `Provincia` e si preme `!` per impostarla come colonna chiave;
@@ -716,11 +716,11 @@ Si può fare in questo modo:
 - si selezionano con `s` le due tabelle `mezziProvincia` e `popolazioneAbruzzo`;
 - si pigia `&` che è il comando di JOIN e in basso a sinistra ci viene chiesto quale tipo si vuole applicare (**nota bene**: con VisiData >2.0 si deve premere `CTRL + x` e scegliere il tipo di `JOIN`);
 
-![](./imgs/21_join.png)
+![](../imgs/21_join.png)
 
 - si scrive `inner` e si pigia `Invio` e si ottiene una tabella che contiene sia il numero di mezzi per provincia, che il numero di abitanti.
 
-![](./imgs/22_join.png)
+![](../imgs/22_join.png)
 
 Da questa tabella a questo punto, semplificando un po', si potrebbe rapidamente calcolare il numero macchine per persona, in questo modo:
 
@@ -729,7 +729,7 @@ Da questa tabella a questo punto, semplificando un po', si potrebbe rapidamente 
 - si scrive poi nel _prompt_ `count/Popolazione` (c'è l'autocompletamento con `TAB` dei nomi delle colonne);
 - e si ottiene un risultato come quello di sotto.
 
-![](./imgs/23_join.png)
+![](../imgs/23_join.png)
 
 
 
@@ -760,7 +760,7 @@ Ecco ad esempio come creare quella che da conto del numero di mezzi per marca, s
 - si va poi nella colonna `provincia_residenza` e si pigia `Shift+w`;
 - si ottiene la tabella pivot desiderata.
 
-![](./imgs/24_pivot.png)
+![](../imgs/24_pivot.png)
 
 Se invece del conteggio delle occorrenze si volesse (a partire da un altro campo) calcolare un altro dato aggregato  - come ad esempio l'età media per marca e provincia - si può procedere in questo modo:
 
@@ -770,7 +770,7 @@ si va di nuovo nella colonna `provincia_residenza` e si pigia `Shift+w`.
 
 In output, per ogni provincia, si avrà quindi la media desiderata.
 
-![](./imgs/27_pivot.png)
+![](../imgs/27_pivot.png)
 
 
 
@@ -796,7 +796,7 @@ Per generare il grafico basterà seguire i seguenti passi:
 
 In output si avrà qualcosa come quella di sotto
 
-![](./imgs/scatterPlot.png)
+![](../imgs/scatterPlot.png)
 
 
 
@@ -818,11 +818,11 @@ Se ad esempio si vuole fare un'analisi sulla data di immatricolazione per mese a
 
 Si ottiene qualcosa come quella di sotto:
 
-![](./imgs/26_moduli.png)
+![](../imgs/26_moduli.png)
 
 E a questo punto si può rinominare la colonna premendo `^`, scrivendo "mese" e poi premendo `Invio`. E poi creare il foglio delle frequenze della colonna `mese`, pigiando `Shift+f` e scoprire che in Abruzzo si immatricola soprattutto a gennaio.
 
-![](./imgs/27_moduli.png)
+![](../imgs/27_moduli.png)
 
 **NOTA BENE**: le funzioni del modulo `datetime` sono disponibili in modo nativo per le colonne già impostate (come tipo) a data. Quanto scritto sopra vale soprattutto come guida al come precaricare e utilizzare un modulo Python in VisiData.
 
@@ -985,11 +985,11 @@ Per cambiarlo:
 1. click con il destro del mouse sulla barra;
 2. e scegliere Proprietà.
 
-![](./imgs/cambiareCarattere.png)
+![](../imgs/cambiareCarattere.png)
 
 Infine si consiglia il font di sotto:
 
-![](./imgs/caratteriNonLeggibili.png)
+![](../imgs/caratteriNonLeggibili.png)
 
 ### Ricette
 
@@ -1001,7 +1001,7 @@ La pagina di esempio è:<br><https://web.archive.org/web/20190618071304/http://w
 
 Questa è composta da diverse tabelle.
 
-![](./imgs/table.png)
+![](../imgs/table.png)
 
 Quella di interesse è l'unica composta da più di 7 colonne, e la query XPATH per estrarla è `//table[count(tr/td)>7]`.
 
@@ -1029,7 +1029,7 @@ vd -f html
 
 Come risultato si aprirà la finestra di sotto. Per aprire la tabella sarà necessario premere `INVIO` e poi si potrà salvare la tabella in CSV (o altri formati) digitando `CTRL+ s`.
 
-![](./imgs/htmltable.png)
+![](../imgs/htmltable.png)
 
 Se si vuole inserire nello script anche la procedura di salvataggio, bisogna modificare lo script in questo modo:
 

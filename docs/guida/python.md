@@ -16,10 +16,10 @@ Se ad esempio si vuole fare un'analisi sulla data di immatricolazione per mese a
 
 Si ottiene qualcosa come quella di sotto:
 
-![](./imgs/26_moduli.png)
+![](../imgs/26_moduli.png)
 
 E a questo punto si può rinominare la colonna premendo `^`, scrivendo "mese" e poi premendo `Invio`. E poi creare il foglio delle frequenze della colonna `mese`, pigiando `Shift+f` e scoprire che in Abruzzo si immatricola soprattutto a gennaio.
 
-![](./imgs/27_moduli.png)
+![](../imgs/27_moduli.png)
 
 **NOTA BENE**: le funzioni del modulo `datetime` sono disponibili in modo nativo per le colonne già impostate (come tipo) a data. Quanto scritto sopra vale soprattutto come guida al come precaricare e utilizzare un modulo Python in VisiData.

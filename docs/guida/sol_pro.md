@@ -37,8 +37,8 @@ Per cambiarlo:
 1. click con il destro del mouse sulla barra;
 2. e scegliere Proprietà.
 
-![](./imgs/cambiareCarattere.png)
+![](../imgs/cambiareCarattere.png)
 
 Infine si consiglia il font di sotto:
 
-![](./imgs/caratteriNonLeggibili.png)
+![](../imgs/caratteriNonLeggibili.png)
