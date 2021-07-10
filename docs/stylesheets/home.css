@@ -35,7 +35,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.hr-hfc  {border: 0; height: 1px!important; background:  #589632!important; background-image: linear-gradient(to right, #93b023,  #589632, #93b023)!important;  width: 100%!important; margin: 20px 0!important; }
+.hr-hfc  {border: 0; height: 1px!important; background:  #000c50!important; background-image: linear-gradient(to right, #000c50!,  #c4e6fa, #000c50!)!important;  width: 100%!important; margin: 20px 0!important; }
 
 /*hr:not([size]) {
   height: 1px;
