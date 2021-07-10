@@ -4,9 +4,6 @@
 
 **NOTA BENE**: Questa pagina si deve a [**Salvatore Fiandaca**](https://twitter.com/totofiandaca), che ha tradotto in italiano [10 Ways to Use VisiData](https://www.visidata.org/blog/2020/ten/). Grazie.
 
-[`torna alla guida`](./README.md)
-
-
 # 10 Modi di usare Visidata
 
 ## 1. esplora i set di dati senza sforzo, indipendentemente dal formato
