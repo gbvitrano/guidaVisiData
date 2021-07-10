@@ -54,10 +54,6 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.tabs
-    - navigation.tabs.sticky
-    - search.highlight
-    - search.share
-    - search.suggest
   palette:
     - scheme: default
       primary: indigo
