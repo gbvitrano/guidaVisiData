@@ -176,6 +176,7 @@ sup {
 }
 
 /* link home*/
+.home {color: #4051b5!important;	text-decoration:none;}
 .home a:link{color: #4051b5!important;	text-decoration:none;}
 .home a:visited {	color: #4051b5!important; text-decoration:none;}
 .home a:hover {color: #4051b5!important; text-decoration:underline; } 
