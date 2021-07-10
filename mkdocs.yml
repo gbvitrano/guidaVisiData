@@ -38,7 +38,7 @@ extra:
       name: Feed RSS
     - icon: fontawesome/solid/file-pdf
       link: ../Guida_VisiData.pdf
-      name: Scarica il file PDF (1.5 mb)
+      name: Scarica il file PDF (2.3 mb)
   analytics:
     provider: google
     property: UA-122084242-1
