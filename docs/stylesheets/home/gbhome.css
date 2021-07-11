@@ -15,8 +15,8 @@
  .md-tabs__list { display: none!important;}
  .md-header__inner { display: none!important;}
  .md-header { display: none!important;}
-
- 
+.md-main__inner { display: none!important;}
+  
  
  
  @import url(https://use.fontawesome.com/releases/v5.1.0/css/all.css);
@@ -7105,8 +7105,8 @@ textarea.form-control-lg {
 }
 
 .py-4 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  padding-top: .75rem !important;
+  padding-bottom: .75rem !important;
 }
 
 .py-5 {
