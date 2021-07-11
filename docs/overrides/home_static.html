@@ -26,7 +26,7 @@
         padding-top: .0rem;
         background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%)
     }
-*/
+
     .tx-hero {
         margin: 32px 2.8rem;
         color: var(--md-primary-bg-color);
@@ -37,7 +37,7 @@
         margin-bottom: 1rem;
         color: #000000de
         font-weight: 700
-    }
+    }*/
 
     .tx-hero__content {
         padding-bottom: 1rem;
@@ -223,12 +223,12 @@
 <section class="tx-container">
     <div class="md-grid md-typeset">
       <div class="tx-hero">
-        <div class="tx-hero__image"><img class="immagonobox" src="imgs/logo_visidata_600.png" draggable="false">
+        <div class="tx-hero__image"><img src="imgs/logo_visidata_600.png" class="immagonobox" title="Guida Visidata" draggable="false">
       </div>
         <div class="tx-hero__content">
          <h1 class="service_title">Guida VisiData</h1> 
           <p><strong>VisiData:</strong> <b> il coltellino svizzero per i dati, che probabilmente non conosci</p>
-          <a class="btn btn-primary btn-xl text-uppercase" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
+          <a class="btn-primary" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
           <p>Consulta la guida</a>
             <a href="https://gbvitrano.github.io/guidaVisiData/dieci_modi_di_usare_visidata/" title="{{ lang.t('source.link.title') }}" class="md-button">10 Ways to Use VisiData</a><br><br> 
                        <strong>VisiData</strong> è un fantastico strumento <em>open source</em> per esplorare e manipolare dati. Mette insieme la chiarezza di un <strong>foglio di calcolo</strong>, con l'efficienza del <strong>terminale</strong> e la potenza di <strong>Python</strong>, in una <em>utility</em> leggera in grado di gestire milioni di righe con facilità. </p>
