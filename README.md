@@ -14,4 +14,13 @@ Se VisiData piacerà anche a te e lo utilizzerai, sarà cosa buona **supportarne
 
 ---
 
+## [Guida](https://gbvitrano.github.io/guidaVisiData/) in versione html e pdf con [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+
+[![](/docs/imgs/sito_home.jpg)](https://gbvitrano.github.io/guidaVisiData/)
+
+[![](docs/imgs/home_guida.png)](https://gbvitrano.github.io/guidaVisiData/)
+
+
+---
+
 NOTA BENE: questa guida è ampiamente ispirata a [quella](https://jsvine.github.io/intro-to-visidata/) molto bella di Jeremy Singer Vine.
