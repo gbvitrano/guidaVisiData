@@ -1,4 +1,4 @@
-o# Come si installa
+# Come si installa
 
 Per gli sviluppatori, per chi usa la riga di comando, [è molto facile](http://visidata.org/install/). È scritto in _Python 3_ e di base basta usare l'installer di Python:
 
@@ -13,7 +13,7 @@ Su Windows non c'è ancora un supporto diretto. È però utilizzabile da chi ha 
 
 Abbiamo tradotto in italiano il *cheat-sheet* di VisiData, creato da Jeremy Singer Vine, disponibile in [HTML](https://jsvine.github.io/visidata-cheat-sheet/it/) e [PDF](https://jsvine.github.io/visidata-cheat-sheet/downloads/visidata-cheat-sheet.it.pdf).
 
-[![](../../imgs/cheatSheetVisiData.png)](https://jsvine.github.io/visidata-cheat-sheet/it/)
+[![](../imgs/cheatSheetVisiData.png)](https://jsvine.github.io/visidata-cheat-sheet/it/)
 
 ### La versione fronte retro a cura di Gianni Vitrano
 
