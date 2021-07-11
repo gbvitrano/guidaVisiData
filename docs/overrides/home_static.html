@@ -21,7 +21,7 @@
         display: flex;
         height: 100%;
     }
-/*
+
     .tx-container {
         padding-top: .0rem;
         background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%)
@@ -37,7 +37,7 @@
         margin-bottom: 1rem;
         color: #000000de
         font-weight: 700
-    }*/
+    }
 
     .tx-hero__content {
         padding-bottom: 1rem;
@@ -202,12 +202,12 @@
         vertical-align: middle;
     }
 
-    .hr-logos {
+/*    .hr-logos {
         margin-top: 0;
         margin-bottom: 30px;
     }
 
- /*   .md-footer-meta__inner {
+    .md-footer-meta__inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -217,6 +217,7 @@
     .md-footer-social {
         padding-top: 20px;
     }*/
+	.hr-hfc {border: 0; height: 1px; background:  #000c50; background-image: linear-gradient(to right, #4051b5,  #000c50, #4051b5);  width: 100%; margin: 20px 0;}	
 </style>
 
 <!-- Main site Entry button descriptions -->
@@ -228,8 +229,7 @@
         <div class="tx-hero__content">
          <h1 class="service_title">Guida VisiData</h1> 
           <p><strong>VisiData:</strong> <b> il coltellino svizzero per i dati, che probabilmente non conosci</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-          <p>Consulta la guida</a>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary"><p>Consulta la guida</a>
             <a href="https://gbvitrano.github.io/guidaVisiData/dieci_modi_di_usare_visidata/" title="{{ lang.t('source.link.title') }}" class="md-button">10 Ways to Use VisiData</a><br><br> 
                        <strong>VisiData</strong> è un fantastico strumento <em>open source</em> per esplorare e manipolare dati. Mette insieme la chiarezza di un <strong>foglio di calcolo</strong>, con l'efficienza del <strong>terminale</strong> e la potenza di <strong>Python</strong>, in una <em>utility</em> leggera in grado di gestire milioni di righe con facilità. </p>
         </div>
