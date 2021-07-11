@@ -154,7 +154,7 @@ extra_css:
  
 ## Page tree
 nav:
-   # - Home: index.md
+    - Home: index.md
     - Guida VisiData:
         - Installazione: guida/insta.md
         - Introduzione: guida/guida.md      
