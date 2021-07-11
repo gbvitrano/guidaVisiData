@@ -52,6 +52,8 @@ Abbiamo tradotto in italiano il *cheat-sheet* di VisiData, creato da Jeremy Sing
 
 ## [Guida](https://gbvitrano.github.io/guidaVisiData/) in versione html e pdf con [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
+[![](imgs/sito_home.jpg)](https://gbvitrano.github.io/guidaVisiData/)
+
 [![](imgs/sito.png)](https://gbvitrano.github.io/guidaVisiData/)
 
 
