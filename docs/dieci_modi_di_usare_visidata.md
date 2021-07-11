@@ -80,8 +80,6 @@ Modifica i nomi dei file ([documentazione sui comandi di modifica](https://www.v
 
 Esistono molti altri modi per utilizzare **VisiData!** Per saperne di più, premi <kbd>Ctrl H</kbd> per vedere la [manpage](https://www.visidata.org/man) o <kbd>z Ctrl+H</kbd> per vedere l'elenco completo dei comandi disponibili sul foglio corrente.
 
-[`torna alla guida`](./README.md)
-
 **[scritto da Saul Pwanson 2020-05-01]**
 
 ---
