@@ -1,6 +1,6 @@
 # 10 Modi di usare Visidata
 
-<p align="center"> <a href="https://www.visidata.org/" title="Visidata" target="_blank"><img src="../imgs/vdlogo.png" width="150" class="immagonobox"   title="Visidata"></a>
+<p align="center"> <a href="https://www.visidata.org/" title="Visidata" target="_blank"><img src="../imgs/vdlogo.png" width="100%" class="immagonobox"   title="Visidata"></a>
 </p>
 
 
