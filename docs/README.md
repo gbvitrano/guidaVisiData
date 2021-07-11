@@ -54,6 +54,6 @@ Abbiamo tradotto in italiano il *cheat-sheet* di VisiData, creato da Jeremy Sing
 
 [![](imgs/sito_home.jpg)](https://gbvitrano.github.io/guidaVisiData/)
 
-[![](imgs/sito.png)](https://gbvitrano.github.io/guidaVisiData/)
+[![](imgs/home_guida.png)](https://gbvitrano.github.io/guidaVisiData/)
 
 
