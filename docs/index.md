@@ -1,4 +1,4 @@
 ---
-template: home_static.html
+template: home.html
 title: Home Page
 ---
