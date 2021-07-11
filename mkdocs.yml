@@ -156,7 +156,7 @@ extra_css:
 nav:
     - Home: index.md
     - Guida VisiData:
-    #   - Installazione: guida/insta.md
+        - Installazione: guida/insta.md
         - Introduzione: guida/guida.md      
         - Lavorare sulle righe: guida/lavorare_sulle_righe.md 
         - Lavorare sulle colonne: guida/lavorare_sulle_colonne.md 
