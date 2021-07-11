@@ -1,5 +1,9 @@
 # 10 Modi di usare Visidata
 
+<p align="center"> <a href="https://www.visidata.org/" title="Visidata" target="_blank"><img src="../imgs/vdlogo.png" width="150" class="immagonobox"   title="Visidata"></a>
+</p>
+
+
 ![](https://pigrecoinfinito.files.wordpress.com/2019/07/vdlogo.png)
 
 <br>
