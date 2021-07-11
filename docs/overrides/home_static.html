@@ -3,15 +3,16 @@
 {% extends "main.html" %}
 {% block tabs %}
 {{ super() }}
-<style>
 
- /*disattiva headser menu*/
- .md-tabs  { display: none!important;}
- .md-tabs__list { display: none!important;}
- .md-header__inner { display: none!important;}
- .md-header { display: none!important;}
-.md-main__inner { display: none!important;}
-  
+ <!-- css home  -->
+<link rel="stylesheet" href="stylesheets/home/gbhome.css">   
+
+    <!--====== Default CSS ======
+    <link rel="stylesheet" href="stylesheets/home/css/default.css">-->
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="stylesheets/home/css/style.css">
+<style>
 
     .md-main {
         flex-grow: 0
@@ -45,8 +46,8 @@
     }
 
     .tx-hero__image{
-        width:17rem;
-        height:17rem;
+       /*width:17rem;
+        height:17rem;*/
         order:1;
         padding-right: 2.5rem;
     }
