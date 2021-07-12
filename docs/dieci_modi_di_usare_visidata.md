@@ -1,6 +1,6 @@
 # 10 Modi di usare Visidata
 <br>
-<p align="center"> <a href="https://www.visidata.org/" title="Visidata" target="_blank"><img src="imgs/vdlogo.png" width="90%" class="immagonobox"   title="Visidata"></a>
+<p align="center"> <a href="https://www.visidata.org/" title="Visidata" target="_blank"><img src="../imgs/vdlogo.png" width="90%" class="immagonobox"   title="Visidata"></a>
 </p><br><br>
 
 **NOTA BENE**: Questa pagina si deve a [**Salvatore Fiandaca**](https://twitter.com/totofiandaca), che ha tradotto in italiano [10 Ways to Use VisiData](https://www.visidata.org/blog/2020/ten/). Grazie.
