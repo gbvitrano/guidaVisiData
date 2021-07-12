@@ -1,4 +1,4 @@
-![](imgs/adesivi.jpeg)
+![](imgs/logo_visidata_600.png)
 
 # VisiData: il coltellino svizzero per i dati, che probabilmente non conosci
 
