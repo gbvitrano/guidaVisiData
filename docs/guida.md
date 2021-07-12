@@ -1,4 +1,4 @@
-![](imgs/logo_visidata_600.png)
+<p align="center"> <img src="logo_visidata_600.png" width="90%" class="immagonobox"   title="Visidata"></a>
 
 # VisiData: il coltellino svizzero per i dati, che probabilmente non conosci
 
