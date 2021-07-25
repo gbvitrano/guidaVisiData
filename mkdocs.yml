@@ -10,7 +10,7 @@ repo_url: https://github.com/gbvitrano/guidaVisiData
 edit_uri: edit/master/docs/ #disables edit button
 
 # Copyright
-copyright: <a href="https://twitter.com/ondatait" title="@ondatait" target="_blank">By @ondatait </a> | <a href="https://gbvitrano.github.io/guidaVisiData/privacy/" title="Informativa privacy estesa" target="_parent">Privacy</a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribution-ShareAlike 4.0 licence (CC BY-SA)" target="_blank" class="link-dark text-decoration-none">CC-BY-SA-4.0</a>
+copyright: <a href="https://twitter.com/ondatait" title="@ondatait" target="_blank">By @ondatait </a> | <a href="https://gbvitrano.github.io/guidaVisiData/privacy/" title="Informativa privacy estesa" target="_parent">Privacy</a> | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale (CC BY-NC-SA 4.0)" target="_blank" class="link-dark text-decoration-none">CC BY-NC-SA 4.0</a>
 
 ## Social Media
 extra:
