@@ -54,6 +54,9 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
   palette:
     - scheme: default
       primary: indigo
@@ -76,7 +79,8 @@ theme:
     repo: fontawesome/brands/github
 # logo: imgs/logo_white.svg
 plugins:
-- search
+- search:
+    prebuild_index: true
 - mkdocstrings
 - autolinks
 - macros   
