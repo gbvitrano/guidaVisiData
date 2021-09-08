@@ -78,9 +78,9 @@ theme:
     logo: fontawesome/solid/book-reader
     repo: fontawesome/brands/github
 # logo: imgs/logo_white.svg
+
 plugins:
-- search:
-    prebuild_index: true
+- search
 - mkdocstrings
 - autolinks
 - macros   
