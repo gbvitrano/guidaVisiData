@@ -1,0 +1,295 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+ <!-- css home  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="stylesheets/home/gbhome.css">   
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="stylesheets/home/css/style.css">
+<style>
+
+    .md-main {
+        flex-grow: 0
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-container {
+        padding-top: .0rem;
+       /* background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%)*/
+    }
+
+    .tx-hero {
+        margin: 10px 1rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+      color: #000000de;
+        font-weight: 700
+    }
+.md-typeset h1 { font-size: 2rem !important; }
+	
+    .tx-hero__content {
+        padding-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    .tx-hero__image{
+       /*width:17rem;
+        height:17rem;*/
+        order:1;
+        padding-right: 2.5rem;
+    }
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: #000c50;
+		border-radius: 0.3rem;
+    }
+
+    .tx-hero .md-button--primary {
+        background-color: #000c50;
+        color: #ffffff;
+        border-color:#000c50;
+	  border-radius: 0.3rem;
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover { 
+        /*background-color: var(--md-accent-fg-color);*/
+	    background-color: #4051b5;
+        color: var(--md-default-bg-color);
+		 /* border-color: var(--md-accent-fg-color)*/
+        border-color:#4051b5;
+    }
+
+    .feature-item h2 svg {
+        height: 30px;
+        float: left;
+        margin-right: 10px;
+        transform: translateY(10%);
+    }
+
+    .top-hr {
+        margin-top: 42px;
+    }
+
+    .feature-item {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word
+    }
+
+    .feature-item h2 {
+        color: #333;
+        font-weight: 300;
+        font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
+
+    .feature-item p {
+        font-size: 16px;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: #111;
+        margin: 0 0 10px;
+        display: block;
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .top-hr {
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .bottom-hr {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .feature-item:hover {
+            background-color: #526cfe47;
+            border-radius: 3px;
+        }
+    }
+
+    .hr {border: 0; height: 1px!important; background:  #000c50!important; background-image: linear-gradient(to right, #4051b5,  #000c50, #4051b5)!important;  width: 100%!important; margin: 20px 0!important; }
+
+
+    .text-center {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 23px;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    .logos img {
+        flex: 1 1 auto;
+        padding: 25px;
+        max-height: 130px;
+        vertical-align: middle;
+    }
+
+    .hr-logos {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .md-footer-meta__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.0rem;
+    }
+
+    .md-footer-social {
+        padding-top: 20px;
+    }
+</style>
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+        <img src="imgs/logo_visidata_600.png" class="immagonobox" title="Guida Visidata" draggable="false">
+        </div>
+        <div class="tx-hero__content">
+          <h1> Guida VisiData </h1>
+          <p>VisiData: il coltellino svizzero per i dati, che probabilmente non conosci</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
+            Consulta la guida
+          </a>
+          <a href="https://gbvitrano.github.io/guidaVisiData/dieci_modi_di_usare_visidata/" title="10 Modi di usare Visidata" class="md-button">
+            10 Ways to Use VisiData
+          </a><br><br>
+         <p> <strong>VisiData</strong> è un fantastico strumento <em>open source</em> per esplorare e manipolare dati. Mette insieme la chiarezza di un <strong>foglio di calcolo</strong>, con l'efficienza del <strong>terminale</strong> e la potenza di <strong>Python</strong>, in una <em>utility</em> leggera in grado di gestire milioni di righe con facilità. </p></div>
+                 
+      </div>
+    </div>
+</section>
+
+<!-- Main site box descriptions -->
+<div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-lg-12">
+                      <div class="header_hero_content mt-45">               
+               <p>La presentazione ufficiale fa un'ottima sintesi, ma non evidenzia la cosa che mi ha colpito di più: quella di <a href="http://saul.pw/" title="Saul Pwanson" target="_blank" class="home"><strong>Saul Pwanson</strong></a> (il creatore di VisiData) è prima di ogni altra cosa una <strong>grande idea</strong>. Lo si capisce usandolo e spero che emerga anche dalle righe seguenti.</p>
+               <p>Per usarlo <strong>non è necessario essere uno sviluppatore</strong>; se si conosce un po' Python, sarà possibile usarlo in modo ancora più sorprendente.                      </p>
+                      </div>
+                    </div></div> 
+
+    <div class="hr">
+    </div>
+</div>
+
+
+<!-- Custom narrow footer -->
+<!-- Footer home page |  autore social licenza -->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start"><a class="home" href="https://twitter.com/ondatait" title="@ondatait " target="_blank">By @ondatait</a></div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                       <!-- icone social -->   
+                       <div class="social-icons">
+<!-- Social twitter -->	
+<a class="social-icon" href="https://twitter.com/opendatasicilia" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+<!-- Social facebook -->	
+<a class="social-icon"  href="https://www.facebook.com/groups/opendatasicilia/" title="FaceBook" target="_blank" ><i class="fa fa-facebook"></i></a>
+<!-- Social telegram -->	
+<a class="social-icon" href="https://t.me/opendatasicilia" title="Gruppo Telegram" target="_blank" ><i class="fa fa-telegram"></i></a>
+<!-- Social github -->
+	<a class="social-icon" href="https://github.com/opendatasicilia" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+<!-- Social ML -->                    
+<a class="social-icon" href="https://groups.google.com/d/forum/opendatasicilia" title="Google mailing list" target="_blank"><i class="fa fa-envelope"></i></a> 
+<!-- rss -->                    
+<a class="social-icon" href="https://materialmkdocs-gb.readthedocs.io/it/latest/feed_rss_created.xml" title="Feed RSS" target="_blank"><i class="fa fa-rss"></i></a> 
+ </div>  
+                   </div>
+                    <div class="col-lg-4 text-lg-end"><a class="home" href="https://creativecommons.org/licenses/by-sa/4.0/" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribution-ShareAlike 4.0 licence (CC BY-SA)" target="_blank">Licenza CC-BY-SA-4.0</a>
+                    </div> 
+                </div>
+            </div>
+</footer>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

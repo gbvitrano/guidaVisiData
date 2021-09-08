@@ -1,0 +1,115 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+    <!--====== Jquery js ======
+    <script src="stylesheets/home/js/jquery-1.12.4.min.js"></script>  -->
+
+    <!--====== Appear js ======
+    <script src="stylesheets/home/js/jquery.appear.min.js"></script> -->
+        
+    <!--====== Main js ======
+    <script src="stylesheets/home/js/main.js"></script> -->
+    
+ <!-- Font Awesome icons (free version)  
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script> -->
+
+ <!-- css home  -->
+<link rel="stylesheet" href="stylesheets/home/gbhome.css">   
+
+    <!--====== Default CSS ======
+    <link rel="stylesheet" href="stylesheets/home/css/default.css">-->
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="stylesheets/home/css/style.css">
+
+
+<!-- Qui il codice della homepage-->
+
+<!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+           <!--      <div class="masthead-subheading">HfcQGIS</div>
+               <div class="masthead-heading text-uppercase">Help funzioni calcolatore di campi di QGIS</div> -->
+          </div>
+        </header>
+        <!-- Services--><br>
+        <section class="page-section" id="services">
+              <div class="container">
+                <div class="text-center">
+                <h3 class="main_title">Guida VisiData</h3><br>
+  <h5 class="sub_title">VisiData: il coltellino svizzero per i dati, che probabilmente non conosci</h5> <br>
+                <a class="btn btn-primary btn-xl text-uppercase" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">Consulta la guida</a>
+          <!-- <a class="btn btn-primary btn-xl text-uppercase" href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button"> GitHub  </a> --><br>
+
+    <!--====== SERVICES PART START ======-->
+    <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-lg-12">
+                      <div class="header_hero_content mt-45">               
+             <blockquote>   <strong>VisiData</strong> è un fantastico strumento <em>open source</em> per esplorare e manipolare dati. Mette insieme la chiarezza di un <strong>foglio di calcolo</strong>, con l'efficienza del <strong>terminale</strong> e la potenza di <strong>Python</strong>, in una <em>utility</em> leggera in grado di gestire milioni di righe con facilità.</blockquote>
+               <p>La presentazione ufficiale fa un'ottima sintesi, ma non evidenzia la cosa che mi ha colpito di più: quella di <a href="http://saul.pw/" title="Saul Pwanson" target="_blank" class="home"><strong>Saul Pwanson</strong></a> (il creatore di VisiData) è prima di ogni altra cosa una <strong>grande idea</strong>. Lo si capisce usandolo e spero che emerga anche dalle righe seguenti.</p>
+               <p>Per usarlo <strong>non è necessario essere uno sviluppatore</strong>; se si conosce un po' Python, sarà possibile usarlo in modo ancora più sorprendente.</p>        
+   <p><span id="more-7541"> </span></p>
+                <h4 class="service_title">Perché usarlo</h4>           
+                <ul>
+                  <li>È <strong>rapido</strong>, apre quasi istantaneamente file di diverse decine di <strong>megabyte</strong>;</li>
+                  <li>è <strong>agile</strong>, rende semplice la <strong>ricerca</strong>, il <strong>filtraggio</strong>, l'<strong>ordinamento</strong>,il <em><strong>join</strong></em> e la ristrutturazione di dati tabellari;</li>
+                  <li>consente di <strong>avere in pochi passaggi</strong> una <strong>visione di insieme dei dataset</strong> su cui si vuole lavorare;</li>
+                  <li>apre <strong>molti</strong> dei <strong>formati</strong> <strong>tipici</strong> di testo strutturato (csv, tsv, xlsx , xls, json, xml, sqlite, shp, html, hdf5, xpt, sas7bdat, sav, dta)</li>
+                  <li>si utilizza <strong>soltanto da tastiera</strong>, ed è possibile dimenticarsi del mouse;</li>
+                  <li>è free ed <em><strong>open source</strong></em>.</li>
+                </ul>
+                <p>Apprezzo molto la sua rapidità e come offra in modo agile una visione di insieme sui dati. Questo, affiancato all'utilizzo da tastiera, lo rende un prodotto che dà una marcia in più a chi lo usa.</p>
+                <p><span id="more-7541"> </span></p>
+                <h4 class="service_title">Supportarne lo sviluppo</h4>
+                <p>Se VisiData vi piacerà e lo utilizzerete, sarà cosa buona <strong>supportarne lo sviluppo con una donazione</strong>. Io ho deciso di farlo e di esserne un "patrono"!</p>
+                <p>Si fa da qui <a class="home" href="https://www.patreon.com/saulpw" title="www.patreon.com/saulpw" target="_blank">https://www.patreon.com/saulpw</a>.</p>
+                  <p><span id="more-7541"> </span></p>          
+                <h4 class="service_title">Come si installa</h4>
+                <p>Per gli sviluppatori, per chi usa la riga di comando, è molto facile. È scritto in Python 3 e di base basta usare l'installer di Python:</p><br>
+<div class="highlight"><pre id="__code_0"><span></span><code>pip3 install visidata</code></pre></div>
+                 <p>Per tutti gli altri, bisogna prima installare <em>Python 3</em>, poi aprire il terminale e lanciare il comando di sopra.<br>
+                   Su Windows non c'è ancora un supporto diretto. È però utilizzabile da chi ha Windows 10: c'è da installare il Windows Linux Subsystem (<a href="https://www.google.it/search?q=installare+bash+su+windows+10&rlz=1C1GGRV_itIT742IT742&source=lnt&tbs=qdr:y&sa=X&ved=0ahUKEwj3xd7p5rrfAhVJ-6QKHarKC90QpwUIJg&biw=1680&bih=907" title="decine di guide per farlo" target="_blank" class="home">decine di guide per farlo</a>), poi installare <em>Python 3</em> nel sistema Linux e infine dare il comando di sopra dal terminale di Linux.</p>
+                   <span id="more-7541"> </span>
+         <h4 class="service_title">Cheat-sheet</h4>         
+         <p>Abbiamo tradotto in italiano il <em>cheat-sheet</em> di VisiData, creato da Jeremy Singer Vine, disponibile in <a class="home" href="https://jsvine.github.io/visidata-cheat-sheet/it/" title="Cheat-sheet HTML" target="_blank">HTML</a> e <a class="home" href="https://jsvine.github.io/visidata-cheat-sheet/downloads/visidata-cheat-sheet.it.pdf" title="Cheat-sheet PDF" target="_blank">PDF</a>.</p>
+   <p><span id="more-7541"> </span>
+   <a class="home" href="https://jsvine.github.io/visidata-cheat-sheet/it/" title="Cheat-sheet" target="_blank"><img src="./imgs/cheatSheetVisiData.png" class="clip_resize" alt="Cheat-sheet" title="Cheat-sheet"></a>
+    <p><span id="more-7541"> </span>
+    <h6 class="service_title">La versione fronte retro a cura di Gianni Vitrano</h6>
+   <p><a class="home" href="https://twitter.com/gbvitrano" title="Gianni Vitrano" target="_blank"><strong>Gianni Vitrano</strong></a> di <a class="home" href="https://twitter.com/opendatasicilia" title="OpenDataSicilia" target="_blank">OpenDataSicilia</a> a partire da questo cheat-sheet, ha creato la versione da stampare <a href="https://gbvitrano.github.io/guidaVisiData/risorse/cheat-sheet_DaStampareFronteRetro_di_GianniVitrano.pdf" title="fronte retro a libretto" target="_blank" class="home"><strong>fronte retro a "libretto</strong>"</a>. Grazie Gianni!</p>
+</div></div></div> 
+{% endblock %}
+
+ <!--  {% block content %}{% endblock %} -->
+
+{% block footer %}
+<!-- Footer home page |  autore social licenza -->
+        <footer class="footer py-4">
+            <div class="container"> <hr  class="hr-hfc">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start"><a class="home" href="https://twitter.com/ondatait" title="@ondatait " target="_blank">By @ondatait</a></div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                       <!-- icone social -->     
+<div class="social-icons">
+<!-- Social twitter -->	
+<a class="social-icon" href="https://twitter.com/opendatasicilia" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+<!-- Social facebook -->	
+<a class="social-icon"  href="https://www.facebook.com/groups/opendatasicilia/" title="FaceBook" target="_blank" ><i class="fab fa-facebook"></i></a>
+<!-- Social telegram -->	
+<a class="social-icon" href="https://t.me/opendatasicilia" title="Gruppo Telegram" target="_blank" ><i class="fab fa-telegram"></i></a>
+<!-- Social github -->
+	<a class="social-icon" href="https://github.com/opendatasicilia" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+<!-- Social ML -->                    
+<a class="social-icon" href="https://groups.google.com/d/forum/opendatasicilia" title="Google mailing list" target="_blank"><i class="fa fa-envelope"></i></a> 
+<!-- rss -->                    
+<a class="social-icon" href="https://materialmkdocs-gb.readthedocs.io/it/latest/feed_rss_created.xml" title="Feed RSS" target="_blank"><i class="fa fa-rss"></i></a> 
+ </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end"><a class="home" href="https://creativecommons.org/licenses/by-sa/4.0/!" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribution-ShareAlike 4.0 licence (CC BY-SA)" target="_blank">Licenza CC-BY-SA-4.0</a>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+{% endblock %}

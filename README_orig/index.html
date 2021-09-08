@@ -1,0 +1,2117 @@
+<!-- Elements added to main will be displayed on all pages -->
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="VisiData è un fantastico strumento open source per esplorare e manipolare dati. Mette insieme la chiarezza di un foglio di calcolo, con l'efficienza del terminale e la potenza di Python, in una utility leggera in grado di gestire milioni di righe con facilità.">
+      
+      
+      
+        <meta name="author" content="Andrea Borruso">
+      
+      
+        <link rel="canonical" href="https://gbvitrano.github.io/guidaVisiData/README_orig/">
+      
+      <link rel="icon" href="../imgs/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>README orig - VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+ <!-- Qui Script header) --> 
+ <link href="https://gbvitrano.github.io/guidaVisiData/stylesheets/jquery-eu-cookie-law-popup.css" rel="stylesheet" type="text/css"/>
+ <!-- Qui Script footer) --> 
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8a43b30f4c884"></script>
+ <!-- Qui Progress bar) --> 
+<script src="https://gbvitrano.github.io/guidaVisiData/stylesheets/jquery-3.1.1.min.js"></script>
+<script src="https://gbvitrano.github.io/guidaVisiData/stylesheets/prognroll.min.js"></script>
+<script>
+    $(function() {
+      $("body").prognroll({
+        height: 4, //Progress bar height in pixels
+        color: "#c4e6fa", //Progress bar background color
+      });
+    });
+</script> 
+<!-- eu-cookie-lawt -->
+<div class="eupopup eupopup-top "></div>
+<script src="https://gbvitrano.github.io/guidaVisiData/stylesheets/jquery-eu-cookie-law-popup.js"></script> 
+
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Lato";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="manifest" href="../manifest.webmanifest" crossorigin="use-credentials">
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/gbextra.css">
+    
+    
+      
+
+  
+
+
+  
+
+  
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-122084242-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+    
+    
+  
+  
+    
+  
+ <!-- facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci - README orig" />
+  <meta property="og:description" content="VisiData è un fantastico strumento open source per esplorare e manipolare dati. Mette insieme la chiarezza di un foglio di calcolo, con l'efficienza del terminale e la potenza di Python, in una utility leggera in grado di gestire milioni di righe con facilità." />
+  <meta property="og:url" content="https://gbvitrano.github.io/guidaVisiData/README_orig/" />
+  <meta property="og:image" content="https://gbvitrano.github.io/guidaVisiData/imgs/logo_visidata_600.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+<!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="<https://mkdocs-gb.coseerobe.it/>" />
+  <meta name="twitter:creator" content="<Giovan Battista Vitrano>" />
+  <meta name="twitter:title" content="VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci - README orig" />
+  <meta name="twitter:description" content="VisiData è un fantastico strumento open source per esplorare e manipolare dati. Mette insieme la chiarezza di un foglio di calcolo, con l'efficienza del terminale e la potenza di Python, in una utility leggera in grado di gestire milioni di righe con facilità." />
+  <meta name="twitter:image" content="https://gbvitrano.github.io/guidaVisiData/imgs/logo_visidata_600.png" />
+<!-- Meta tags -->  
+  <meta name="keywords" content="guida, visidata, espressioni, funzioni, tabella, attributi, coordinate, opendatasicilia,">  
+  <meta name="creation_Date" content="08/07/2021">
+  <meta property="robots" content="index, follow" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="RSS feed of created content" href="https://gbvitrano.github.io/guidaVisiData/feed_rss_created.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="https://gbvitrano.github.io/guidaVisiData/feed_rss_updated.xml">
+  
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visidata-il-coltellino-svizzero-per-i-dati-che-probabilmente-non-conosci" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="VisiData&amp;#58; il coltellino svizzero per i dati, che probabilmente non conosci" class="md-header__button md-logo" aria-label="VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              README orig
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/gbvitrano/guidaVisiData/" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    La guida VisiData
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../guida/" class="md-tabs__link">
+        Guida
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://ondata.it/" class="md-tabs__link">
+      Ondata
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="VisiData&amp;#58; il coltellino svizzero per i dati, che probabilmente non conosci" class="md-nav__button md-logo" aria-label="VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"/></svg>
+
+    </a>
+    VisiData&#58; il coltellino svizzero per i dati, che probabilmente non conosci
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/gbvitrano/guidaVisiData/" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    La guida VisiData
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Guida
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guida" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guida
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guida/" class="md-nav__link">
+        VisiData
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dieci_modi_di_usare_visidata/" class="md-nav__link">
+        Dieci modi di usare visidata
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../salvare_procedura_da_applicare/" class="md-nav__link">
+        Come salvare un insieme di operazioni e applicarle come modello ad altri file
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ondata.it/" class="md-nav__link">
+        Ondata
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#perche-usarlo" class="md-nav__link">
+    Perché usarlo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supportarne-lo-sviluppo" class="md-nav__link">
+    Supportarne lo sviluppo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-si-installa" class="md-nav__link">
+    Come si installa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cheat-sheet" class="md-nav__link">
+    Cheat-sheet
+  </a>
+  
+    <nav class="md-nav" aria-label="Cheat-sheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-versione-fronte-retro-a-cura-di-gianni-vitrano" class="md-nav__link">
+    La versione fronte retro a cura di Gianni Vitrano
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-modi-di-usare-visidata" class="md-nav__link">
+    10 Modi di usare Visidata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-guida" class="md-nav__link">
+    La guida
+  </a>
+  
+    <nav class="md-nav" aria-label="La guida">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#un-esempio-di-apertura-di-un-file-grande" class="md-nav__link">
+    Un esempio di apertura di un file grande
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigare-tra-i-dati" class="md-nav__link">
+    Navigare tra i dati
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-fogli" class="md-nav__link">
+    I fogli
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lavorare-sulle-righe" class="md-nav__link">
+    Lavorare sulle righe
+  </a>
+  
+    <nav class="md-nav" aria-label="Lavorare sulle righe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selezione-di-righe-tramite-espressione-regolare" class="md-nav__link">
+    Selezione di righe tramite espressione regolare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezione-di-righe-tramite-espressioni-python" class="md-nav__link">
+    Selezione di righe tramite espressioni Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezione-di-righe-tramite-espressioni-python-e-regex" class="md-nav__link">
+    Selezione di righe tramite espressioni Python e regex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezionare-un-numero-random-di-righe" class="md-nav__link">
+    Selezionare un numero random di righe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spostare-righe" class="md-nav__link">
+    Spostare righe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancellare-righe" class="md-nav__link">
+    Cancellare righe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificare-il-contenuto" class="md-nav__link">
+    Modificare il contenuto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lavorare-sulle-colonne" class="md-nav__link">
+    Lavorare sulle colonne
+  </a>
+  
+    <nav class="md-nav" aria-label="Lavorare sulle colonne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#il-foglio-delle-colonne" class="md-nav__link">
+    Il foglio delle colonne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impostare-il-tipo-di-campo" class="md-nav__link">
+    Impostare il tipo di campo
+  </a>
+  
+    <nav class="md-nav" aria-label="Impostare il tipo di campo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impostare-numero-di-decimali-in-un-campo-floating" class="md-nav__link">
+    Impostare numero di decimali in un campo floating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impostare-formato-data-personalizzato" class="md-nav__link">
+    Impostare formato data personalizzato
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rinominare-le-colonne" class="md-nav__link">
+    Rinominare le colonne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rinominare-le-colonne-in-blocco" class="md-nav__link">
+    Rinominare le colonne in blocco
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#come-espandere-ridurre-e-rimuovere-colonne" class="md-nav__link">
+    Come espandere, ridurre e rimuovere colonne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spostare-una-colonna" class="md-nav__link">
+    Spostare una colonna
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificare-una-colonna-tramite-unespressione-python" class="md-nav__link">
+    Modificare una colonna tramite un'espressione Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calcoli-per-colonna" class="md-nav__link">
+    Calcoli per colonna
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#come-definire-una-colonna-chiave" class="md-nav__link">
+    Come definire una colonna chiave
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipolare-le-colonne-dal-foglio-delle-colonne" class="md-nav__link">
+    Manipolare le colonne dal foglio delle colonne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creare-una-nuova-colonna" class="md-nav__link">
+    Creare una nuova colonna
+  </a>
+  
+    <nav class="md-nav" aria-label="Creare una nuova colonna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-colonna-tramite-espressione" class="md-nav__link">
+    Nuova colonna tramite espressione
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nuove-colonne-come-risultato-di-splitting" class="md-nav__link">
+    Nuove colonne come risultato di splitting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nuove-colonne-come-risultato-di-cattura-e-estrazione" class="md-nav__link">
+    Nuove colonne come risultato di cattura e estrazione
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trasformare-una-colonna-tramite-espressione-regolare-trova-e-sostituisci" class="md-nav__link">
+    Trasformare una colonna tramite espressione regolare (trova e sostituisci)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il-foglio-delle-frequenze" class="md-nav__link">
+    Il foglio delle frequenze
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lavorare-sulle-celle" class="md-nav__link">
+    Lavorare sulle celle
+  </a>
+  
+    <nav class="md-nav" aria-label="Lavorare sulle celle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fare-un-trova-e-sostituisci-globale" class="md-nav__link">
+    Fare un trova e sostituisci globale
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordinare-e-filtrare" class="md-nav__link">
+    Ordinare e filtrare
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordinare e filtrare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordinare-righe" class="md-nav__link">
+    Ordinare righe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtrare-righe" class="md-nav__link">
+    Filtrare righe
+  </a>
+  
+    <nav class="md-nav" aria-label="Filtrare righe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtro-tramite-espressione-python" class="md-nav__link">
+    Filtro tramite espressione Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtro-tramite-espressione-python-su-campo-datetime" class="md-nav__link">
+    Filtro tramite espressione Python su campo datetime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtri-tramite-espressioni-python-basati-su-piu-colonne" class="md-nav__link">
+    Filtri tramite espressioni python, basati su più colonne
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riepilogo-dei-dati" class="md-nav__link">
+    Riepilogo dei dati
+  </a>
+  
+    <nav class="md-nav" aria-label="Riepilogo dei dati">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggiunta-di-aggregatori" class="md-nav__link">
+    Aggiunta di aggregatori
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#il-riepilogo-globale" class="md-nav__link">
+    Il riepilogo globale
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salvare-un-foglio" class="md-nav__link">
+    Salvare un foglio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fare-il-redirect-delloutput-verso-lo-stdout" class="md-nav__link">
+    Fare il redirect dell'output verso lo stdout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fare-join-tra-tabelle" class="md-nav__link">
+    Fare JOIN tra tabelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenare-tabelle" class="md-nav__link">
+    Concatenare tabelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabelle-pivot" class="md-nav__link">
+    Tabelle Pivot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creare-un-grafico-di-dispersione-scatter-plot" class="md-nav__link">
+    Creare un grafico di dispersione (scatter plot)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moduli-python" class="md-nav__link">
+    Moduli Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salvare-un-flusso-di-lavoro" class="md-nav__link">
+    Salvare un flusso di lavoro
+  </a>
+  
+    <nav class="md-nav" aria-label="Salvare un flusso di lavoro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduzione" class="md-nav__link">
+    Introduzione
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applicare-lo-stesso-flusso-a-un-file-diverso-ma-omologo" class="md-nav__link">
+    Applicare lo stesso flusso a un file diverso, ma omologo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nota-sul-file-di-log" class="md-nav__link">
+    Nota sul file di log
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soluzione-problemi" class="md-nav__link">
+    Soluzione problemi
+  </a>
+  
+    <nav class="md-nav" aria-label="Soluzione problemi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#riga-attiva-di-colore-nero" class="md-nav__link">
+    Riga attiva di colore nero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caratteri-non-leggibili-in-windows-subsystem-for-linux" class="md-nav__link">
+    Caratteri non leggibili in Windows Subsystem for Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ricette" class="md-nav__link">
+    Ricette
+  </a>
+  
+    <nav class="md-nav" aria-label="Ricette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#salvare-una-tabella-html-in-csv-a-partire-da-una-pagina-web" class="md-nav__link">
+    Salvare una tabella HTML in CSV, a partire da una pagina web
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fare-proposte-eo-chiedere-supporto" class="md-nav__link">
+    Fare proposte e/o Chiedere supporto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#note-finali" class="md-nav__link">
+    Note finali
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-consigliati" class="md-nav__link">
+    URL consigliati
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+<!-- pulsante stampa -->	
+
+    <a href="../print_page/" title="Stampa il sito in PDF" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3z"/></svg>
+    </a>
+
+ <!-- pulsante pdf -->
+
+<a href="../Guida_VisiData.pdf" title="Scarica il PDF" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.5h1v3h-1v-3m-5 1h1v-1H7v1M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2M9.5 10.5A1.5 1.5 0 0 0 8 9H5.5v6H7v-2h1a1.5 1.5 0 0 0 1.5-1.5v-1m5 0A1.5 1.5 0 0 0 13 9h-2.5v6H13a1.5 1.5 0 0 0 1.5-1.5v-3m4-1.5h-3v6H17v-2h1.5v-1.5H17v-1h1.5V9z"/></svg>
+    </a>
+	
+	
+
+                
+                  <a href="https://github.com/gbvitrano/guidaVisiData/edit/master/docs/README_orig.md" title="Modifica" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p><img alt="" src="../imgs/adesivi.jpeg" /></p>
+<h1 id="visidata-il-coltellino-svizzero-per-i-dati-che-probabilmente-non-conosci">VisiData: il coltellino svizzero per i dati, che probabilmente non conosci<a class="headerlink" href="#visidata-il-coltellino-svizzero-per-i-dati-che-probabilmente-non-conosci" title="Permanent link">↵</a></h1>
+<blockquote>
+<p><strong>VisiData</strong> è un fantastico strumento <em>open source</em> per esplorare e manipolare dati. Mette insieme la chiarezza di un <strong>foglio di calcolo</strong>, con l'efficienza del <strong>terminale</strong> e la potenza di <strong>Python</strong>, in una <em>utility</em> leggera in grado di gestire milioni di righe con facilità.</p>
+</blockquote>
+<p>La presentazione ufficiale fa un'ottima sintesi, ma non evidenzia la cosa che mi ha colpito di più:  quella di <a href="http://saul.pw/"><strong>Saul Pwanson</strong></a> (il creatore di VisiData) è prima di ogni altra cosa una <strong>grande idea</strong>. Lo si capisce usandolo e spero che emerga anche dalle righe seguenti.</p>
+<p>Per usarlo <strong>non è necessario essere uno sviluppatore</strong>; se si conosce un po' Python, sarà possibile usarlo in modo ancora più sorprendente.</p>
+<h2 id="perche-usarlo">Perché usarlo<a class="headerlink" href="#perche-usarlo" title="Permanent link">↵</a></h2>
+<ul>
+<li>È <strong>rapido</strong>, apre quasi istantaneamente file di diverse decine di <strong>megabyte</strong>;</li>
+<li>è <strong>agile</strong>, rende semplice la <strong>ricerca</strong>, il <strong>filtraggio</strong>, l'<strong>ordinamento</strong>,il <em><strong>join</strong></em> e la ristrutturazione  di dati tabellari;</li>
+<li>consente di <strong>avere in pochi passaggi</strong> una <strong>visione di insieme dei dataset</strong> su cui si vuole lavorare;</li>
+<li>apre <strong>molti</strong> dei <strong>formati</strong> <strong>tipici</strong> di testo strutturato (csv, tsv,  xlsx , xls, json, xml, sqlite, shp, html, hdf5, xpt, sas7bdat, sav, dta)</li>
+<li>si utilizza <strong>soltanto da tastiera</strong>, ed è possibile dimenticarsi del mouse;</li>
+<li>è free ed <em><strong>open source</strong></em>.</li>
+</ul>
+<p>Apprezzo molto la sua rapidità e come offra in modo agile una visione di insieme sui dati. Questo, affiancato all'utilizzo da tastiera, lo rende un prodotto che dà una marcia in più a chi lo usa.</p>
+<h2 id="supportarne-lo-sviluppo">Supportarne lo sviluppo<a class="headerlink" href="#supportarne-lo-sviluppo" title="Permanent link">↵</a></h2>
+<p>Se VisiData vi piacerà e lo utilizzerete, sarà cosa buona <strong>supportarne lo sviluppo con una donazione</strong>. Io ho deciso di farlo e di esserne un "patrono"!</p>
+<p>Si fa da qui <a href="https://www.patreon.com/saulpw">https://www.patreon.com/saulpw</a>.</p>
+<h2 id="come-si-installa">Come si installa<a class="headerlink" href="#come-si-installa" title="Permanent link">↵</a></h2>
+<p>Per gli sviluppatori, per chi usa la riga di comando, <a href="http://visidata.org/install/">è molto facile</a>. È scritto in <em>Python 3</em> e di base basta usare l'installer di Python:</p>
+<div class="highlight"><pre><span></span><code>pip3 install visidata
+</code></pre></div>
+<p>Per tutti gli altri, bisogna prima installare <em>Python 3</em>, poi aprire il terminale e lanciare il comando di sopra.<br>
+Su Windows non c'è ancora un supporto diretto. È però utilizzabile da chi ha Windows 10: c'è da installare il Windows Linux Subsystem (<a href="https://www.google.it/search?q=installare+bash+su+windows+10&amp;rlz=1C1GGRV_itIT742IT742&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwj3xd7p5rrfAhVJ-6QKHarKC90QpwUIJg&amp;biw=1680&amp;bih=907">decine di guide per farlo</a>), poi installare <em>Python 3</em> nel sistema Linux e infine dare il comando di sopra dal terminale di Linux.</p>
+<h2 id="cheat-sheet">Cheat-sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">↵</a></h2>
+<p>Abbiamo tradotto in italiano il <em>cheat-sheet</em> di VisiData, creato da Jeremy Singer Vine, disponibile in <a href="https://jsvine.github.io/visidata-cheat-sheet/it/">HTML</a> e <a href="https://jsvine.github.io/visidata-cheat-sheet/downloads/visidata-cheat-sheet.it.pdf">PDF</a>.</p>
+<p><a href="https://jsvine.github.io/visidata-cheat-sheet/it/"><img alt="" src="../imgs/cheatSheetVisiData.png" /></a></p>
+<h3 id="la-versione-fronte-retro-a-cura-di-gianni-vitrano">La versione fronte retro a cura di Gianni Vitrano<a class="headerlink" href="#la-versione-fronte-retro-a-cura-di-gianni-vitrano" title="Permanent link">↵</a></h3>
+<p><a href="https://twitter.com/gbvitrano"><strong>Gianni Vitrano</strong></a> di <a href="https://twitter.com/opendatasicilia">OpenDataSicilia</a> a partire da questo cheat-sheet, ha creato la versione da stampare <a href="../risorse/cheat-sheet_DaStampareFronteRetro_di_GianniVitrano.pdf">fronte retro a "libretto"</a>. Grazie Gianni!</p>
+<h2 id="10-modi-di-usare-visidata">10 Modi di usare Visidata<a class="headerlink" href="#10-modi-di-usare-visidata" title="Permanent link">↵</a></h2>
+<p><a href="../dieci_modi_di_usare_visidata/"><strong>Dieci esempi rapidi</strong></a>, che mostrano cosa è possibile fare con VisiData. È una sezione a cura di <a href="https://twitter.com/totofiandaca"><strong>Salvatore Fiandaca</strong></a> (grazie).</p>
+<h2 id="la-guida">La guida<a class="headerlink" href="#la-guida" title="Permanent link">↵</a></h2>
+<p>VisiData è un <strong>foglio elettronico a riga di comando</strong>. Potrebbe suonare come una contraddizione, perché si accosta qualcosa con interfaccia ricca (come un foglio elettronico) a qualcosa di visualmente molto minimale. In realtà questa è <strong>una delle idee forti</strong> di questa applicazione, che prende il meglio di questi due mondi: l'approccio a griglia e multi tabella del primo, e la rapidità, l'immediatezza, l'essere <em>easy</em> e "subito pronto" di un terminale.</p>
+<p>Di base quindi bisogna prima aprire il terminale. Poi per aprire un file basta scrivere un comando con questa struttura:</p>
+<div class="highlight"><pre><span></span><code>vd nomeFile.csv
+</code></pre></div>
+<p>A seguire soltanto un piccolo estratto sul come usarlo. Per approfondire ho creato un elenco di <a href="#url-consigliati">URL consigliati</a>.</p>
+<p>VisiData si usa al 99% con la tastiera, quindi è bene che il <kbd>Caps Lock</kbd> non sia attivo: gli <em>shortcut</em> da tastiera non funzionerebbero correttamente (grazie <a href="https://twitter.com/totofiandaca">Salvatore Fiandaca</a> per la nota).</p>
+<h4 id="un-esempio-di-apertura-di-un-file-grande">Un esempio di apertura di un file grande<a class="headerlink" href="#un-esempio-di-apertura-di-un-file-grande" title="Permanent link">↵</a></h4>
+<p>"Grande" in informatica non vuol dire niente, è come "salato" con un piatto di pasta.</p>
+<p>Un CSV grande per il mio PC (un notebook del 2015, con processore i7 e 8 GB di RAM) - se voglio lavorarci in modo "visuale" con un foglio elettronico - potrebbe essere già un CSV da 500000 righe, che mi si apre dopo 1 minuto e 15 secondi e dove un "trova e sostituisci" diventa operazione molto lunga (uso LibreOffice Calc).</p>
+<p>Ci sono anche limiti che non sono personali. Se per esempio provassi a lavorare con uno dei dataset del "<a href="http://dati.mit.gov.it/catalog/dataset/parco-circolante-dei-veicoli">Parco Circolante dei veicoli</a>" in Italia scoprirei dei limiti strumentali. <br>Un esempio con i dati dell'<a href="http://geodata.mit.gov.it/datasets/parco_circolante_Abruzzo.csv">Abruzzo</a>: con il comando da shell <code>wc -l parco_circolante_Abruzzo.csv</code> leggo che è composto da 1170439 righe.
+Con una regione "piccola" come questa si va già oltre il limite di Calc, che è di 1048576 righe. Se voglio comunque visualizzare 1048576 righe di questo dataset, sul mio PC sono necessari circa <strong>5 minuti</strong>.</p>
+<p>Con <strong>VisiData</strong> lancio <code>vd parco_circolante_Abruzzo.csv</code> e lo visualizzo <strong>in 1 secondo</strong>. C'è il "trucco", che è  invero una delle buone scelte del progettista: il file viene aperto in modo asincrono, caricandone subito una porzione navigabile. In basso a destra (vedi sotto) viene dato conto della percentuale di avanzamento che porterà alla piena apertura (meno di 15 secondi).</p>
+<p><img alt="" src="../imgs/01_vdApertura.png" /></p>
+<p>Questo essere "subito pronto" lo rende uno strumento di grande comodità, che l'ha portato a essere uno dei miei quotidiani.<br>
+Ribadisco però ancora un volta che il "grande" e la valutazione del tempo dipendono dagli obiettivi che si hanno, dalle proprie conoscenze di base e dall'<em>hardware/software</em> che si ha a disposizione.</p>
+<p>Per chiudere la tabella aperta e Visidata si pigia <code>q</code> sulla tastiera.</p>
+<p><strong>NOTA BENE</strong>: questo file con i dati sul "Parco Circolante dei veicoli" in Abruzzo, verrà usato in questa guida come dataset di base. Ne ho pertanto creato una copia di backup <a href="../dati/parco_circolante_Abruzzo.zip">qui</a>.</p>
+<h4 id="navigare-tra-i-dati">Navigare tra i dati<a class="headerlink" href="#navigare-tra-i-dati" title="Permanent link">↵</a></h4>
+<p>Per muoversi tra le celle si usano le 4 frecce direzionali dalla tastiera o (come vim, da cui nell'uso da tastiera VisiData prende molta ispirazione) <code>h</code>,<code>j</code>,<code>k</code>,<code>l</code>.</p>
+<p>Per muoversi in modo più esteso:</p>
+<ul>
+<li><code>g + freccia in basso</code> oppure <code>gj</code>, per andare all'ultima riga;</li>
+<li><code>g + freccia in alto</code> oppure <code>gk</code>, per andare alla prima riga;</li>
+<li><code>g + freccia a sinistra</code> oppure <code>gh</code>, per andare alla colonna più a sinistra;</li>
+<li><code>g + freccia a destra</code> oppure <code>gl</code>, per andare alla colonna più a destra;</li>
+<li><code>PageDown</code> oppure <code>Control + Shift + f</code>, una pagina in giù;</li>
+<li><code>PageUp</code> oppure <code>Control + Shift + b</code>, una pagina in alto.</li>
+</ul>
+<p><strong>NOTA BENE</strong>: <code>g</code> è il tasto per i comandi "globali".</p>
+<p>Per muoversi tramite ricerca testuale, sfruttando le espressioni regolari:</p>
+<ul>
+<li><code>/ + regex</code>, cerca in avanti nella colonna corrente;</li>
+<li><code>? + regex</code>, cerca indietro nella colonna corrente;</li>
+<li><code>g/ + regex</code>, cerca in avanti in tutte le colonne;</li>
+<li><code>g? + regex</code>, cerca indietro in tutte le colonne;</li>
+</ul>
+<p>Con <code>n</code> e <code>N</code> si va avanti e indietro rispetto agli elementi di <em>output</em> del risultato della ricerca.</p>
+<p>Infine per saltare a una determinata riga o colonna, rispettivamente <code>zr</code> e <code>zc</code> seguito dal numero di riga e colonna (la numerazione inizia da zero).</p>
+<h3 id="i-fogli">I fogli<a class="headerlink" href="#i-fogli" title="Permanent link">↵</a></h3>
+<p>In VisiData ci sono tre tipi di fogli:</p>
+<ul>
+<li>i fogli sorgente, con i dati che si è scelto di aprire con VisiData;</li>
+<li>i fogli derivati, come quelli derivanti da filtraggio o la tabelle con le frequenze (vedi sotto);</li>
+<li>i metafogli, che descrivono e definiscono i dataset caricati (come quello che descrive ad esempio le colonne di una tabella, o il "foglio dei fogli").</li>
+</ul>
+<p>Il "foglio dei fogli" si apre con <code>Shift + s</code> e fornisce l'elenco (e alcune informazioni correlate) di tutti i fogli aperti. Selezionandone uno e pigiando <code>Invio</code>, quest'ultimo si aprirà.</p>
+<p><img alt="" src="../imgs/02_foglioDeiFogli.png" /></p>
+<p>Per rinominarne uno dal "foglio dei fogli", basta selezionarlo, premere <code>e</code> e inserire il nuovo nome e poi dare <code>Invio</code>. O in alternativa, se si è davanti al foglio che si vuole rinominare, premere la <code>barra spaziatrice</code>, scrivere <code>rename-sheet</code>, digitare il nuovo nome e infine pigiare su <code>Invio</code>.</p>
+<p>Il foglio correntemente aperto si chiude con <code>q</code>.</p>
+<h3 id="lavorare-sulle-righe">Lavorare sulle righe<a class="headerlink" href="#lavorare-sulle-righe" title="Permanent link">↵</a></h3>
+<p>La cosa più importante da comprendere è come selezionarle e deselezionarle, perché molte delle operazioni vengono  eseguite proprio su quelle selezionate.</p>
+<p>I tasti principali di selezione sono:</p>
+<ul>
+<li><code>s</code>, per selezionare la riga corrente;</li>
+<li><code>u</code>, per deselezionare la riga corrente;</li>
+<li><code>t</code>, per invertire la selezione della riga corrente;</li>
+<li><code>gs</code>, per selezionare tutte le righe;</li>
+<li><code>gu</code>, per deselezionare tutte le righe;</li>
+<li><code>gt</code>, per invertire i criteri di selezione per tutte le righe.</li>
+</ul>
+<p><img alt="" src="../imgs/03_selezione.png" /></p>
+<h4 id="selezione-di-righe-tramite-espressione-regolare">Selezione di righe tramite espressione regolare<a class="headerlink" href="#selezione-di-righe-tramite-espressione-regolare" title="Permanent link">↵</a></h4>
+<ul>
+<li><code>| + termine da ricercare</code>, seleziona tutte le righe in cui c'è corrispondenza per la colonna corrente;</li>
+<li><code>\ + termine da ricercare</code>, deseleziona tutte le righe in cui c'è corrispondenza per la colonna corrente;</li>
+<li><code>g| + termine da ricercare</code>, seleziona tutte le righe in cui c'è corrispondenza per una qualsiasi colonna;</li>
+<li><code>g\ + termine da ricercare</code>, deseleziona tutte le righe in cui c'è corrispondenza per una qualsiasi colonna;</li>
+<li><code>,</code>, dato il valore della cella selezionata, seleziona tutte le righe in cui per la colonna corrente c'è corrispondenza;</li>
+<li><code>g,</code>, seleziona tutte le righe uguali a quelle corrente.</li>
+</ul>
+<p>Se ad esempio:</p>
+<ul>
+<li>ci si sposta nella colonna <code>provincia_residenza</code></li>
+<li>poi si pigia <code>|</code>;</li>
+<li>si digita <code>TERAMO</code>;</li>
+<li>si preme <code>Invio</code>.</li>
+</ul>
+<p>... si ottiene qualcosa come quella di sotto.</p>
+<p><img alt="" src="../imgs/04_selezione.png" /></p>
+<h4 id="selezione-di-righe-tramite-espressioni-python">Selezione di righe tramite espressioni Python<a class="headerlink" href="#selezione-di-righe-tramite-espressioni-python" title="Permanent link">↵</a></h4>
+<p>È possibile fare una selezione di righe tramite un'espressione di Python (<a href="https://docs.python.org/3/tutorial/introduction.html">qui</a> per approfondire sui concetti di base delle espressioni).</p>
+<p>I comandi da tastiera sono:</p>
+<ul>
+<li><code>z|</code>, per selezionare tutte le righe in cui l'espressione è valida;</li>
+<li><code>z\</code>, per deselezionare tutte le righe in cui l'espressione è valida.</li>
+</ul>
+<p>Ad esempio seguendo questi step:</p>
+<ul>
+<li><code>gu</code>, per deselezionare tutto;</li>
+<li><code>z|</code>, per attivare la selezione tramite espressione Python;</li>
+<li>scrivendo <code>provincia_residenza == "PESCARA" and sesso == "F"</code>;</li>
+<li>e pigiando su <code>Invio</code>.</li>
+</ul>
+<p>... verranno selezionati tutti gli elementi in cui la provincia è "Pescara" ed il sesso è "F".</p>
+<h4 id="selezione-di-righe-tramite-espressioni-python-e-regex">Selezione di righe tramite espressioni Python e regex<a class="headerlink" href="#selezione-di-righe-tramite-espressioni-python-e-regex" title="Permanent link">↵</a></h4>
+<ul>
+<li>si digita <code>z|</code>;</li>
+<li>si scrive l'espressione, come ad esempio <code>re.search("^1", FieldB) and re.search("^2", FieldA)</code>, ovvero tutte le righe in cui il campo <code>FieldB</code> inizia per <code>1</code> e il campo <code>FieldA</code> per <code>2</code>.</li>
+</ul>
+<h4 id="selezionare-un-numero-random-di-righe">Selezionare un numero random di righe<a class="headerlink" href="#selezionare-un-numero-random-di-righe" title="Permanent link">↵</a></h4>
+<ul>
+<li>aprire una tabella;</li>
+<li>fare click sulla barra spaziatrice;</li>
+<li>scrivere <code>random-rows</code> (si può scrivere anche soltanto ad esempio <code>ran</code> e autocompletare con <code>TAB</code>) e premere <code>INVIO</code>;</li>
+<li>scrivere il numero di righe random che si vogliono selezionare.</li>
+</ul>
+<h4 id="spostare-righe">Spostare righe<a class="headerlink" href="#spostare-righe" title="Permanent link">↵</a></h4>
+<p>Si fa con queste combinazioni:</p>
+<ul>
+<li><code>Shift+j</code>, per spostare la riga corrente verso il basso;</li>
+<li><code>Shift+k</code>, per spostare la riga corrente verso l'alto.</li>
+</ul>
+<h4 id="cancellare-righe">Cancellare righe<a class="headerlink" href="#cancellare-righe" title="Permanent link">↵</a></h4>
+<ul>
+<li><code>d</code> per cancellare la riga corrente;</li>
+<li><code>gd</code> per cancellare le righe selezionate.</li>
+</ul>
+<h4 id="modificare-il-contenuto">Modificare il contenuto<a class="headerlink" href="#modificare-il-contenuto" title="Permanent link">↵</a></h4>
+<p>Questi i comandi di base:</p>
+<ul>
+<li><code>e</code>, per modificare la cella corrente;</li>
+<li><code>Enter</code>, per chiudere la modifica;</li>
+<li><code>Control+c</code>, per cancellare la modifica;</li>
+<li><code>Control+a</code>, per andare a inizio linea;</li>
+<li><code>Control+e</code>, per andare a fine linea;</li>
+<li><code>Control+k</code>, per cancellare il contenuto a partire dalla posizione del cursore.</li>
+</ul>
+<h3 id="lavorare-sulle-colonne">Lavorare sulle colonne<a class="headerlink" href="#lavorare-sulle-colonne" title="Permanent link">↵</a></h3>
+<p>Ogni colonna in VisiData ha 3 attributi principali:</p>
+<ul>
+<li><code>Name</code>, il nome della colonna;</li>
+<li><code>Width</code>, la larghezza a schermo della colonna (se impostata a 0, la colonna diventa invisibile);</li>
+<li><code>Type</code>, per definire se contiene testi, numeri interi, numeri decimali, monete o date.</li>
+</ul>
+<h4 id="il-foglio-delle-colonne">Il foglio delle colonne<a class="headerlink" href="#il-foglio-delle-colonne" title="Permanent link">↵</a></h4>
+<p>In VisiData esistono i cosiddetti meta-fogli (vedi <a href="#i-fogli">sopra</a>): uno di questi è il foglio delle colonne, che elenca tutte le colonne e i relativi attributi di una tabella.</p>
+<p>A partire dalla visualizzazione di una tabella, si apre con <code>Shift+c</code>.</p>
+<p><img alt="" src="../imgs/05_foglioColonne.png" /></p>
+<p>È una delle caratteristiche di VisiData che consente una rapida prima lettura del dato, che personalmente uso anche ad esempio per costruire brevi relazioni che contengono schema dati.</p>
+<h4 id="impostare-il-tipo-di-campo">Impostare il tipo di campo<a class="headerlink" href="#impostare-il-tipo-di-campo" title="Permanent link">↵</a></h4>
+<p>Come impostazione predefinita VisiData imposta a "testo" la tipologia di tutti i campi (che è quello che faccio di solito anche io alla prima apertura sia in un foglio elettronico che in Pandas).<br>
+Per definire il tipo di campo di una colonna della tabella che si sta visualizzando (cosa che consente di fare correttamente ad esempio operazioni di ordinamento, matematiche, ecc.), si deve navigare sino alla colonna su cui si vuole intervenire e poi pigiare:</p>
+<ul>
+<li><code>#</code>, per definire un campo con numeri interi (0, -1, 5000000)</li>
+<li><code>%</code>, per definire un campo con numeri decimali (0.5, -3.14, 23.45557)</li>
+<li><code>$</code>, per definire un campo con monete ($4.99, €20)</li>
+<li><code>@</code>, per definire un campo con date (2018-04-06, April 6, 2018, 04/06/2018)</li>
+<li><code>~</code>, per definire un campo di testo (qualsiasi cosa!)</li>
+</ul>
+<h5 id="impostare-numero-di-decimali-in-un-campo-floating">Impostare numero di decimali in un campo floating<a class="headerlink" href="#impostare-numero-di-decimali-in-un-campo-floating" title="Permanent link">↵</a></h5>
+<p>Di <em>default</em> i campi floating sono renderizzati con due decimali (la formattazione è impostata come <code>%.02f</code>).</p>
+<p>Per modificare la cosa si può aprire il foglio delle colonne (<code>SHIFT+c</code>) e modificare il valore di formattazione delle colonna <code>fmtstr</code> (vedi sotto).</p>
+<p><img alt="" src="../imgs/formatFloating.png" /></p>
+<p>Per passare a tre decimali per un campo, basterà ad esempio modificare la cella della colonna di interesse da <code>%.02f</code> a <code>%.03f</code> (in edit di cella si va con il tasto <code>e</code>).<br>
+Se si vuole fare su più colonne:</p>
+<ul>
+<li>si apre sempre il foglio delle colonne;</li>
+<li>si selezionano le colonne di cui si vuole cambiare la formattazione;</li>
+<li>si va sulla colonna <code>fmtstr</code>;</li>
+<li>si va in modifica globale con <code>ge</code> e si inserisce il valore di formattazione desiderato;</li>
+<li>si preme <code>INVIO</code> per applicare la modifica.</li>
+</ul>
+<h5 id="impostare-formato-data-personalizzato">Impostare formato data personalizzato<a class="headerlink" href="#impostare-formato-data-personalizzato" title="Permanent link">↵</a></h5>
+<p>Se una cella contiene ad esempio la data <code>06/11/2020</code> (qui come 6 novembre 2020), e imposto la colonna come data con il tasto <code>@</code>, visidata la interpreta come <code>2020-06-11</code>, ovvero come 11 giugno.</p>
+<p>Per impostarla correttamente bisogna impostare un formato data personalizzato:</p>
+<ul>
+<li>si va sulla colonna con le date;</li>
+<li>si digita <code>z@</code> e si preme <kbd>INVIO</kbd>;</li>
+<li>si imposta il formato - in questo caso <code>%d/%m/%Y</code> - e si preme <kbd>INVIO</kbd>.</li>
+</ul>
+<p>In output si avrà <code>2020-11-06</code>.</p>
+<h4 id="rinominare-le-colonne">Rinominare le colonne<a class="headerlink" href="#rinominare-le-colonne" title="Permanent link">↵</a></h4>
+<p>Per farlo si naviga sino alla colonna che si vuole rinominare e poi:</p>
+<ul>
+<li>si pigia <code>^</code>;</li>
+<li>si digita il nome che si vuole assegnare;</li>
+<li>si pigia <code>Invio</code>.</li>
+</ul>
+<h4 id="rinominare-le-colonne-in-blocco">Rinominare le colonne in blocco<a class="headerlink" href="#rinominare-le-colonne-in-blocco" title="Permanent link">↵</a></h4>
+<p>Può essere utile ad esempio anteporre dei caratteri a tutte le colonne che iniziano per <code>t</code>.</p>
+<p>Questi i passi:</p>
+<ul>
+<li>si apre il foglio colonne con <code>shift + c</code>;</li>
+<li>si va nella colonna con il nome delle colonne (è la prima);</li>
+<li>si digita <code>|</code>, si scrive <code>^t</code> e si pigia <code>INVIO</code> (saranno selezionate tutte le colonne che iniziano con il carattere <code>t</code>);</li>
+<li>si pigia <code>g*</code>, per attivare il trova e sostituisci via <em>regex</em>;</li>
+<li>si scrive <code>^(t.+)/TR_\1</code> e poi <code>INVIO</code>.</li>
+</ul>
+<p>Tutte le colonne che iniziano per <code>t</code>, avranno un nuovo nome corrispondente al precedente, con <code>TR_</code> come prefisso. La colonna <code>tabacco</code>, diventerebbe ad esempio <code>TR_tabacco</code>.</p>
+<h4 id="come-espandere-ridurre-e-rimuovere-colonne">Come espandere, ridurre e rimuovere colonne<a class="headerlink" href="#come-espandere-ridurre-e-rimuovere-colonne" title="Permanent link">↵</a></h4>
+<p>Questi gli shortcut:</p>
+<ul>
+<li><code>_</code>, per espandere la larghezza della colonna corrente, alla larghezza massima del testo contenuto nella stessa, tenendo conto delle righe visualizzate a schermo;</li>
+<li><code>g_</code>, per espandere la larghezza di tutte le colonne, alla larghezza massima del testo contenuto, tenendo conto delle righe visualizzate a schermo;</li>
+<li><code>z_ + n</code>, per impostare la larghezza della colonna corrente a <code>n</code> caratteri;</li>
+<li><code>-</code>, per nascondere la colonna corrente (viene impostata a 0 la sua larghezza);</li>
+<li><code>gv</code>, per scoprire tutte le colonne nascoste;</li>
+<li><code>z-</code>, per ridurre la larghezza della colonna corrente alla sua metà.</li>
+</ul>
+<h4 id="spostare-una-colonna">Spostare una colonna<a class="headerlink" href="#spostare-una-colonna" title="Permanent link">↵</a></h4>
+<p>Ecco come farlo:</p>
+<ul>
+<li><code>Shift+h</code>, sposta la colonna corrente di una posizione a sinistra;</li>
+<li><code>Shift+l</code>, sposta la colonna corrente di una posizione a destra.</li>
+</ul>
+<h4 id="modificare-una-colonna-tramite-unespressione-python">Modificare una colonna tramite un'espressione Python<a class="headerlink" href="#modificare-una-colonna-tramite-unespressione-python" title="Permanent link">↵</a></h4>
+<p>A questa tabella si vuole assegnare al campo <code>FieldA</code> il valore di <code>FieldB</code>, tutte le volte che <code>FieldA</code> è vuoto.</p>
+<table>
+<thead>
+<tr>
+<th>FieldA</th>
+<th>FieldB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<p>Questa la procedura:</p>
+<ul>
+<li><code>gs</code> per selezionare tutte le righe;</li>
+<li><code>g=</code> per scrivere l'espressione Python;</li>
+<li>aggiungere come espressione <code>FieldB if FieldA=="" else FieldA</code>.</li>
+</ul>
+<p>Ovvero (<code>FieldA</code>) è uguale <code>FieldB</code> se <code>FieldA</code> non contiene nulla, altrimenti è uguale a se stesso (rimane invariato).</p>
+<h4 id="calcoli-per-colonna">Calcoli per colonna<a class="headerlink" href="#calcoli-per-colonna" title="Permanent link">↵</a></h4>
+<p>È possibile avere restituito, per una colonna, il risultato di uno dei calcoli di aggregazione disponibili:</p>
+<p><img alt="" src="../imgs/operatoriAggregazione.png" /></p>
+<p>Ad esempio per avere la somma dei valori di una colonna con numeri interi:</p>
+<ul>
+<li>si imposta il tipo di colonna a numero intero (con <code>#</code>);</li>
+<li>si digita <code>z+</code> e poi <code>INVIO</code>;</li>
+<li>si digita <code>sum</code> e poi <code>INVIO</code>.</li>
+</ul>
+<p>In basso, si leggerà il valore risultante.</p>
+<p><strong>NOTA BENE</strong>: se nessuna riga è selezionata si avrà il totale per colonna, altrimenti il calcolo sarà applicato per colonna alle sole righe selezionate.</p>
+<h4 id="come-definire-una-colonna-chiave">Come definire una colonna chiave<a class="headerlink" href="#come-definire-una-colonna-chiave" title="Permanent link">↵</a></h4>
+<p>Per ogni foglio è possibile definire una o più colonne chiave. Hanno due funzioni principali:</p>
+<ul>
+<li>rimangono fissate sul lato sinistro, quando si naviga orizzontalmente sulla tabella;</li>
+<li>hanno una funzione speciale quando si fanno certe operazioni (come quelle di <em>JOIN</em>, per alcuni conteggi, ecc.).</li>
+</ul>
+<p>Per definire una colonna chiave (e vice-versa) si naviga sino alla colonna di interesse e si pigia <code>!</code>.</p>
+<h4 id="manipolare-le-colonne-dal-foglio-delle-colonne">Manipolare le colonne dal foglio delle colonne<a class="headerlink" href="#manipolare-le-colonne-dal-foglio-delle-colonne" title="Permanent link">↵</a></h4>
+<p>Il foglio delle colonne oltre a dare una visione di insieme, consente di fare delle rapide modifiche in blocco. È possibile spostare le colonne con <code>Shift+j</code> e <code>Shift+k</code>, rinominarle con <code>e</code>, impostare il tipo per tutte quelle selezionate, impostare la larghezza per tutte quelle selezionate.</p>
+<p>Ad esempio a partire dal Parco Circolante dei veicoli dell'Abruzzo, il foglio colonne (<code>Shift+c</code>) appare in questo modo.</p>
+<p><img alt="" src="../imgs/06_foglioColonne.png" /></p>
+<p>Se si vuole impostare a "numero intero" le colonne <code>progressivo</code> e <code>eta_intestatario</code>, bisognerà prima selezionarle con <code>s</code>.</p>
+<p><img alt="" src="../imgs/07_foglioColonne.png" /></p>
+<p>Poi premere <code>g#</code>.</p>
+<p><img alt="" src="../imgs/08_foglioColonne.png" /></p>
+<h4 id="creare-una-nuova-colonna">Creare una nuova colonna<a class="headerlink" href="#creare-una-nuova-colonna" title="Permanent link">↵</a></h4>
+<p>Sono tre le modalità più comode:</p>
+<ul>
+<li>come risultato di un'espressione Python;</li>
+<li>come risultato di un comando di <em>split</em>;</li>
+<li>come risultato di estrazione di una porzione di testo da una colonna.</li>
+</ul>
+<h5 id="nuova-colonna-tramite-espressione">Nuova colonna tramite espressione<a class="headerlink" href="#nuova-colonna-tramite-espressione" title="Permanent link">↵</a></h5>
+<p>Ad esempio potrebbe essere utile creare una colonna vero/falso, per tutte le auto del Parco Circolante dei veicoli dell'Abruzzo, con cilindrata maggiore ai 643 (è un numero a caso). Per farlo:</p>
+<ul>
+<li>navigare sino alla colonna <code>cilindrata</code>;</li>
+<li>premere <code>%</code> per impostarla come numero decimale;</li>
+<li>pigiare su <code>=</code>;</li>
+<li>nel <em>prompt</em> in basso a sinistra scrivere <code>cilindrata &gt; 643</code>;</li>
+<li>premere <code>Invio</code>.</li>
+</ul>
+<p>In output qualcosa come quella di sotto, con la nuova colonna risultato di un'espressione Python.</p>
+<p><img alt="" src="../imgs/15_nuoveColonne.png" /></p>
+<h5 id="nuove-colonne-come-risultato-di-splitting">Nuove colonne come risultato di splitting<a class="headerlink" href="#nuove-colonne-come-risultato-di-splitting" title="Permanent link">↵</a></h5>
+<p>Si possono creare nuove colonne, come risultato di una suddivisione di una già esistente. Ad esempio nel campo <code>data_immatricolazione</code> è contenuta sia la data che l'orario, separati da spazio (i.e. <code>1995-04-03 00:00:00</code>). <br>
+Se si vuole suddividerla in due colonne (data e orario), si può procedere in questo modo:</p>
+<ul>
+<li>si naviga sino alla colonna <code>data_immatricolazione</code>;</li>
+<li>si preme <code>:</code>;</li>
+<li>si sceglie la stringa di testo (definibile anche come espressione regolare) da usare come separatore e si scrive in basso a sinistra nel <em>prompt</em>. In questo caso è lo spazio;</li>
+<li>si digita quindi lo spazio e si dà <code>Invio</code>.</li>
+</ul>
+<p>Come output si avrà qualcosa come quella di sotto: due colonne frutto della divisione in più colonne, sfruttando come separatore lo spazio.</p>
+<p><img alt="" src="../imgs/16_nuoveColonne.png" /></p>
+<h5 id="nuove-colonne-come-risultato-di-cattura-e-estrazione">Nuove colonne come risultato di cattura e estrazione<a class="headerlink" href="#nuove-colonne-come-risultato-di-cattura-e-estrazione" title="Permanent link">↵</a></h5>
+<p>Per farlo ci vogliono delle conoscenze di base sulle espressioni regolari (che sono una conoscenza propedeutica per chiunque lavori con i dati).</p>
+<p>Se si vuole ad esempio estrarre l'anno dalla celle che contiene il valore <code>1995-04-03 00:00:00</code>, basterà definire l'espressione regolare che estrae a partire dall'inizio della cella i primi 4 numeri. Che in termini di espressione regolare è <code>^[0-9]{4}</code>.</p>
+<p>Per creare una nuova colonna a partire dalla definizione di un'espressione regolare da usare come "estrattore", si procede in questo modo:</p>
+<ul>
+<li>si naviga sulla colonna <code>data_immatricolazione</code>;</li>
+<li>si pigia <code>;</code>;</li>
+<li>si scrive nel prompt in basso a sinistra <code>^([0-9]{4})</code>. Sono state inserite le parentesi tonde, perché la cattura si fa a partire dalla definizione di un gruppo;</li>
+<li>si pigia <code>Invio</code>.</li>
+</ul>
+<p>E si ottiene qualcosa come quella di sotto:</p>
+<p><img alt="" src="../imgs/17_nuoveColonne.png" /></p>
+<h4 id="trasformare-una-colonna-tramite-espressione-regolare-trova-e-sostituisci">Trasformare una colonna tramite espressione regolare (trova e sostituisci)<a class="headerlink" href="#trasformare-una-colonna-tramite-espressione-regolare-trova-e-sostituisci" title="Permanent link">↵</a></h4>
+<p>Su ogni colonna è possibile fare delle trasformazioni basate su espressioni regolari. Se ad esempio si vogliono rimuovere dalle celle della colonna <code>data_immatricolazione</code> le informazioni sull'orario e passare quindi da <code>1995-04-03 00:00:00</code> a <code>1995-04-03</code> si può procedere in questo modo:</p>
+<ul>
+<li>si selezionano le righe su cui si vuole fare questa trasformazione (se sono tutte il comando è <code>gs</code>);</li>
+<li>si va nella colonna <code>data_immatricolazione</code>;</li>
+<li>si pigia su <code>g*</code>;</li>
+<li>si scrive nel prompt <code>.*$/</code>. Il simbolo <code>/</code> in VisiData separa ciò che si cerca, da ciò con cui si vuole sostituire. Qui si cerca uno spazio (<code></code>), seguito da qualsiasi carattere sino a fine cella (<code>.*$</code>), e si vuole sostituire con nulla;</li>
+<li>si pigia <code>Invio</code> (ci vorrà un po' di tempo, sono più di un milione di righe).</li>
+</ul>
+<p>Il risultato sarà qualcosa come quella di sotto:</p>
+<p><img alt="" src="../imgs/25_trasforma.png" /></p>
+<p>Questo è un "trova e sostituisci" per colonna.</p>
+<h4 id="il-foglio-delle-frequenze">Il foglio delle frequenze<a class="headerlink" href="#il-foglio-delle-frequenze" title="Permanent link">↵</a></h4>
+<p>Questa è una delle funzioni che uso di più ed è un'altra gran bell'idea. A partire da una colonna (o dalla combinazione di più d'una) è possibile - con <code>Shift+f</code> - aprire un foglio derivato, che contiene dei dati relativi al conteggio per valori distinti di quanto contenuto in quella colonna.</p>
+<p>Se per esempio a partire dal Parco Circolante dei veicoli dell'Abruzzo, si volesse avere un'idea sulla distribuzione per "marca", basta navigare in vista tabella sino a quella colonna e poi pigiare <code>Shift+f</code> e avere qualcosa come quella di sotto.</p>
+<p><img alt="" src="../imgs/09_tabellaFrequenze.png" /></p>
+<p>I dati sono ordinati per conteggio ed emerge subito come una famosa marca nazionale da sola faccia &frac14; del campione. Così come emerge che c'è un 5% di elementi in cui la marca non è definita e anche questa è un'informazione che ci potrebbe consentire da subito di prendere delle decisioni. <br>Molto comoda anche la colonna <code>histogram</code> che da visivamente in modo molto diretto un'idea del rapporto tra i numeri descritti in tabella.</p>
+<h3 id="lavorare-sulle-celle">Lavorare sulle celle<a class="headerlink" href="#lavorare-sulle-celle" title="Permanent link">↵</a></h3>
+<h4 id="fare-un-trova-e-sostituisci-globale">Fare un trova e sostituisci globale<a class="headerlink" href="#fare-un-trova-e-sostituisci-globale" title="Permanent link">↵</a></h4>
+<p>Si parte dal selezionare le righe su cui si vuole eseguire l'operazione (se sono tutte il comando è <code>gs</code>).</p>
+<p>Digitare <kbd>gz*</kbd> e poi scrivere <code>stringa da trovare</code>/<code>stringa da sostituire</code> e dare <kbd>INVIO</kbd>.</p>
+<p>Se ad esempio volessi sostituire la stringa <code>pal</code> con <code>mis</code>, dovrei scrivere <code>pal/mis</code>.</p>
+<p>È possibile usare anche le espressioni regolari.</p>
+<h3 id="ordinare-e-filtrare">Ordinare e filtrare<a class="headerlink" href="#ordinare-e-filtrare" title="Permanent link">↵</a></h3>
+<h4 id="ordinare-righe">Ordinare righe<a class="headerlink" href="#ordinare-righe" title="Permanent link">↵</a></h4>
+<p>I tasti <code>[</code> e <code>]</code> ordinano i dati rispettivamente in modo crescente e decrescente, a partire dalla colonna attiva.</p>
+<h4 id="filtrare-righe">Filtrare righe<a class="headerlink" href="#filtrare-righe" title="Permanent link">↵</a></h4>
+<p>È possibile estrarre in vari modi un campione delle righe della tabella visualizzata. Quello di base è a partire dalla selezione delle righe (in uno dei modi visti sopra) e poi pigiare <code>"</code>. Ad esempio si naviga sino alla colonna <code>marca</code>, si preme <code>|</code>, si scrive <code>chevr</code>, si pigia <code>Invio</code> (vengono selezionati tutti i record associati a <code>CHEVROLET</code>) e infine si preme <code>"</code>. Si avrà una tabella filtrata, con gli 8814 record relativi a questa marca per l'Abruzzo.</p>
+<p>Oppure posso farlo a partire da un "foglio delle frequenze" (vedi <a href="#il-foglio-delle-frequenze">qui</a>):</p>
+<ul>
+<li>si naviga sino alla colonna <code>marca</code>;</li>
+<li>si pigia <code>Shift+f</code>, che mi da in <em>output</em> il conteggio dei valori distinti per marca (sono più di un milione di record, ci vorrà un po' di tempo);</li>
+<li>si scorre sino alla riga che contiene la marca che si vuole filtrare;</li>
+</ul>
+<p><img alt="" src="../imgs/11_filtro.png" /></p>
+<ul>
+<li>si pigia <code>Invio</code> e si avrà una tabella filtrata, con i record relativi a quella marca per l'Abruzzo.</li>
+</ul>
+<p><img alt="" src="../imgs/12_filtro.png" /></p>
+<p>Dal foglio delle frequenze è possibile filtrare su più di un elemento:</p>
+<ul>
+<li>si selezionano ad esempio tre marche, pigiando <code>s</code> per ognuna;</li>
+<li>si chiude il foglio delle frequenze con <code>q</code> e si torna al foglio dati;</li>
+<li>si pigia <code>"</code> e si ottiene una tabella filtrata con i dati relativi alle sole tre marche selezionate prima.</li>
+</ul>
+<h5 id="filtro-tramite-espressione-python">Filtro tramite espressione Python<a class="headerlink" href="#filtro-tramite-espressione-python" title="Permanent link">↵</a></h5>
+<p>È possibile <strong>filtrare</strong> righe tramite un'<strong><code>espressione</code> Python</strong> (<a href="https://docs.python.org/3/reference/expressions.html">qui</a> la documentazione ufficiale e <a href="https://realpython.com/python-operators-expressions/">qui</a> una guida che consiglio).
+Se ad esempio dalla tabella di sotto si volessero soltanto le province con più di 350.000 abitanti</p>
+<p><img alt="" src="../imgs/28_filtro.png" /></p>
+<p>basterebbe:</p>
+<ul>
+<li>per prima cosa impostare il campo <code>Popolazione</code> come numerico, pigiando <kbd>#</kbd>;</li>
+<li>pigiare <code>z|</code> per attivare il filtro tramite espressione Python;</li>
+<li>scrivere l'espressione basata sulla colonna, che qui è <code>Popolazione&gt;350000</code> e poi premere <kbd>INVIO</kbd>.</li>
+</ul>
+<p>In output si avrà la selezione di tutte le righe che risolvono l'espressione scritta.</p>
+<p><img alt="" src="../imgs/29_filtro.png" /></p>
+<p>Note:</p>
+<ul>
+<li>nel filtro per espressione c'è l'autocompletamento del nome colonna, quindi se si scrive ad esempio <code>Pop</code> e poi si fa click su <kbd>TAB</kbd>, viene restituito a schermo <code>Popolazione</code>;</li>
+<li>è possibile scrivere espressioni complesse, che fanno riferimento a più colonne.</li>
+</ul>
+<h5 id="filtro-tramite-espressione-python-su-campo-datetime">Filtro tramite espressione Python su campo datetime<a class="headerlink" href="#filtro-tramite-espressione-python-su-campo-datetime" title="Permanent link">↵</a></h5>
+<p>È possibile filtrare righe tramite un'espressione Python a partire da campi <code>datetime</code>, dopo averli impostare come data.</p>
+<p>Usando <a href="https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv">questo</a> file CSV (by <a href="https://github.com/pcm-dpc/COVID-19">PCM-DPC</a>), se ad esempio dalla tabella di sotto si volessero soltanto i record con giorno 29:</p>
+<p><img alt="" src="../imgs/30_filtro_datetime_01.png" /></p>
+<p>basterebbe:</p>
+<ul>
+<li>per prima cosa impostare il campo <code>data</code> come data, pigiando <kbd>@</kbd>;</li>
+<li>pigiare <code>z|</code> per attivare il filtro tramite espressione Python;</li>
+<li>scrivere l'espressione basata sulla colonna, che qui è <code>data.day == 29</code> e poi premere <kbd>INVIO</kbd>.</li>
+</ul>
+<p>In output si avrà la selezione di tutte le righe che risolvono l'espressione scritta.</p>
+<p><img alt="" src="../imgs/30_filtro_datetime_02.png" /></p>
+<p>Osservazioni: oltre a <code>day</code> è possibile usare: <code>month</code>, <code>year</code>e <code>hour</code></p>
+<p>Se si vogliono ad esempio selezionare soltanto righe con date nel futuro, l'espressione sarà <code>data &gt; datetime.datetime.now()</code>.</p>
+<h5 id="filtri-tramite-espressioni-python-basati-su-piu-colonne">Filtri tramite espressioni python, basati su più colonne<a class="headerlink" href="#filtri-tramite-espressioni-python-basati-su-piu-colonne" title="Permanent link">↵</a></h5>
+<p>Si vogliono ad esempio selezionare tutte le righe in cui il domicilio non è né a Palermo, né a Ragusa, ma la cui residenza è in una di queste due città.</p>
+<p>A partire ad esempio da:</p>
+<table>
+<thead>
+<tr>
+<th>domicilio</th>
+<th>residenza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PA</td>
+<td>PA</td>
+</tr>
+<tr>
+<td>RG</td>
+<td>RG</td>
+</tr>
+<tr>
+<td>TO</td>
+<td>TO</td>
+</tr>
+<tr>
+<td>VE</td>
+<td>PA</td>
+</tr>
+</tbody>
+</table>
+<p>Questa la procedura:</p>
+<ul>
+<li>pigiare <code>z|</code> per selezionare tramite espressione Python;</li>
+<li>scrivere <code>re.search("^(?!PA|RG).*", domicilio) and re.search("(PA|RG)", residenza)</code>;</li>
+<li>premere <kbd>INVIO</kbd>.</li>
+</ul>
+<p>La prima è una speciale condizione di <code>regex</code>, che cerca al negativo.</p>
+<p>Sarà selezionata soltanto la riga seguente:</p>
+<table>
+<thead>
+<tr>
+<th>domicilio</th>
+<th>residenza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VE</td>
+<td>PA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="riepilogo-dei-dati">Riepilogo dei dati<a class="headerlink" href="#riepilogo-dei-dati" title="Permanent link">↵</a></h3>
+<p>Uno dei modi per avere un riepilogo è usare il foglio delle frequenze (vedi <a href="#il-foglio-delle-frequenze">qui</a>).</p>
+<p>È possibile generare un foglio delle frequenze anche basato su più colonne. Per farlo si impostano come colonne chiave (<a href="#come-definire-una-colonna-chiave">qui</a> come fare) quelle che si vogliono trasformare in "foglio delle frequenze", e poi si pigia <code>g+Shift+f</code>. Qui sotto ad esempio un riepilogo per le coppie univoche di <code>destinazione/alimentazione</code>.</p>
+<p><img alt="" src="../imgs/13_riepilogo.png" /></p>
+<h4 id="aggiunta-di-aggregatori">Aggiunta di aggregatori<a class="headerlink" href="#aggiunta-di-aggregatori" title="Permanent link">↵</a></h4>
+<p>I fogli di frequenza, oltre al conteggio per valori distinti, possono contenere altri calcoli. Gli "aggregatori" possibili sono <code>min</code>, <code>max</code>, <code>avg / mean</code>, <code>median</code>, <code>q3/q4/q5/q10</code> (terzili/quartili/quintili/decili), <code>sum</code>, <code>distinct</code>, <code>count</code> e <code>keymax</code>.</p>
+<p>Ad esempio per ogni provincia si può avere restituito la distribuzione di età per quartile e scoprire che il 50% del campione è compreso nella fascia di età tra i 18 e circa i 55 anni.</p>
+<p><img alt="" src="../imgs/10_tabellaFrequenze.png" /></p>
+<p>Per aggiungere l'aggregatore <code>q4</code> al foglio delle frequenze, bisogna seguire questi passi:</p>
+<ul>
+<li>navigare sino alla colonna <code>eta_intestatario</code> e impostarla a numero intero con <code>#</code>;</li>
+<li>premere <code>+</code> e scrivere (in basso a sinistra) <code>q4</code> (per il calcolo dei quartili, quindi al 25, 50 e 75 percento);</li>
+<li>navigare sino alla colonna <code>provincia_residenza</code> e pigiare <code>Shift+f</code>.</li>
+</ul>
+<p>Inizierà da subito il calcolo (che non è immediato, sono più di un milione di righe) e alla fine si avrà qualcosa come l'immagine di sopra (non è fico VisiData?).</p>
+<h4 id="il-riepilogo-globale">Il riepilogo globale<a class="headerlink" href="#il-riepilogo-globale" title="Permanent link">↵</a></h4>
+<p>Per avere una visione a "volo d'uccello" sull'intera tabella esiste il comando <code>Shift+i</code>, che restituisce un riepilogo statistico per tutte le colonne.<br>
+Se prima di lanciarlo si definiscono correttamente i campi (ad esempio i numerici, come numerici), verranno eseguiti correttamente anche i calcoli per <code>min</code>, <code>max</code>, <code>median</code>, <code>mean</code>, <code>stdev</code>.</p>
+<p><img alt="" src="../imgs/14_riepilogo.png" /></p>
+<p>Questa è un'altra <em>feature</em> di grande comodità (presente in molte applicazione e ambienti per analisi dati), che verrà usata molto da chi lavorerà con VisiData.</p>
+<h3 id="salvare-un-foglio">Salvare un foglio<a class="headerlink" href="#salvare-un-foglio" title="Permanent link">↵</a></h3>
+<p>Per salvare un foglio si preme <code>CTRL+s</code>, poi si scrive il nome del file con estensione (<code>nomeEsempio.csv</code>) e infine si pigia <code>Invio</code>.</p>
+<h3 id="fare-il-redirect-delloutput-verso-lo-stdout">Fare il redirect dell'output verso lo stdout<a class="headerlink" href="#fare-il-redirect-delloutput-verso-lo-stdout" title="Permanent link">↵</a></h3>
+<p>Il comando</p>
+<div class="highlight"><pre><span></span><code>vd input.csv -b --save-filetype json | jq .
+</code></pre></div>
+<p>invierà ad esempio a <code>jq</code> un <em>output</em> <code>JSON</code> a partire dal CSV di <em>input</em>.</p>
+<p>Se ad esempio si vuole passare l'output a grep:</p>
+<div class="highlight"><pre><span></span><code>vd input.csv -b --save-filetype tsv 2&gt; /dev/null | grep &#39;a&#39;
+</code></pre></div>
+<p><code>2&gt; /dev/null</code> per non avere <code>stderr</code> a schermo.</p>
+<h3 id="fare-join-tra-tabelle">Fare JOIN tra tabelle<a class="headerlink" href="#fare-join-tra-tabelle" title="Permanent link">↵</a></h3>
+<p>Se ad esempio si volesse calcolare il rapporto tra numero di mezzi e popolazione, sarebbe utile fare un JOIN con una tabella con i dati della popolazione residente.</p>
+<p>I dati per provincia sono quelli di sotto e sono stati salvati in un <a href="../dati/popolazioneAbruzzo.tsv">file TSV</a> denominato <a href="../dati/popolazioneAbruzzo.tsv"><code>popolazioneAbruzzo.tsv</code></a> (fonte <a href="http://dati.istat.it/Index.aspx?QueryId=18545#">ISTAT</a>).</p>
+<table>
+<thead>
+<tr>
+<th>Provincia</th>
+<th>Popolazione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L'AQUILA</td>
+<td>300404</td>
+</tr>
+<tr>
+<td>TERAMO</td>
+<td>308284</td>
+</tr>
+<tr>
+<td>PESCARA</td>
+<td>319388</td>
+</tr>
+<tr>
+<td>CHIETI</td>
+<td>387120</td>
+</tr>
+</tbody>
+</table>
+<p>Si può fare in questo modo:</p>
+<ul>
+<li>si parte da <code>vd parco_circolante_Abruzzo.csv</code>;</li>
+<li>si va sulla colonna <code>provincia_residenza</code>;</li>
+<li>si calcola il foglio delle frequenze pigiando <code>Shift+f</code> e si ottiene</li>
+</ul>
+<p><img alt="" src="../imgs/18_join.png" /></p>
+<ul>
+<li>si rinomina questo foglio frequenze premendo la barra spaziatrice, scrivendo il comando <code>rename-sheet</code> e dando poi <code>Invio</code>. E poi inserendo il nome nuovo (ad esempio <code>mezziProvincia</code>);</li>
+<li>si apre la tabella con i dati sulla popolazione per provincia, pigiando <code>o</code>, scrivendo <code>popolazioneAbruzzo.tsv</code> (che è il nome del file) e pigiando <code>Invio</code> (NOTA BENE si può scrivere anche soltanto <code>popo</code> e poi pigiare <code>TAB</code> e il nome del file verrà autocompletato). Si otterrà</li>
+</ul>
+<p><img alt="" src="../imgs/19_join.png" /></p>
+<ul>
+<li>si va nella colonna <code>Provincia</code> e si preme <code>!</code> per impostarla come colonna chiave. Il JOIN in VisiData viene fatto tra colonne chiave;</li>
+<li>si apre il "foglio dei fogli" con <code>Shift+s</code> e si visualizzerà qualcosa come;</li>
+</ul>
+<p><img alt="" src="../imgs/20_join.png" /></p>
+<ul>
+<li>si va nella riga che contiene lo <em>sheet</em> <code>popolazioneAbruzzo</code> e si pigia <kbd>INVIO</kbd>;</li>
+<li>si va di nuovo nella colonna <code>Provincia</code> e si preme <code>!</code> per impostarla come colonna chiave;</li>
+<li>si apre il "foglio dei fogli" con <code>Shift+s</code>;</li>
+<li>si selezionano con <code>s</code> le due tabelle <code>mezziProvincia</code> e <code>popolazioneAbruzzo</code>;</li>
+<li>si pigia <code>&amp;</code> che è il comando di JOIN e in basso a sinistra ci viene chiesto quale tipo si vuole applicare (<strong>nota bene</strong>: con VisiData &gt;2.0 si deve premere <code>CTRL + x</code> e scegliere il tipo di <code>JOIN</code>);</li>
+</ul>
+<p><img alt="" src="../imgs/21_join.png" /></p>
+<ul>
+<li>si scrive <code>inner</code> e si pigia <code>Invio</code> e si ottiene una tabella che contiene sia il numero di mezzi per provincia, che il numero di abitanti.</li>
+</ul>
+<p><img alt="" src="../imgs/22_join.png" /></p>
+<p>Da questa tabella a questo punto, semplificando un po', si potrebbe rapidamente calcolare il numero macchine per persona, in questo modo:</p>
+<ul>
+<li>si va nella colonna <code>Popolazione</code> e si preme <code>#</code> per impostarla come numero intero;</li>
+<li>si pigia <code>=</code> (per creare una nuova colonna con valori frutto di un'espressione);</li>
+<li>si scrive poi nel <em>prompt</em> <code>count/Popolazione</code> (c'è l'autocompletamento con <code>TAB</code> dei nomi delle colonne);</li>
+<li>e si ottiene un risultato come quello di sotto.</li>
+</ul>
+<p><img alt="" src="../imgs/23_join.png" /></p>
+<h3 id="concatenare-tabelle">Concatenare tabelle<a class="headerlink" href="#concatenare-tabelle" title="Permanent link">↵</a></h3>
+<p>La concatenazione tra due o più tabelle con la stessa struttura si attiva tramite <code>&amp;</code>. Ad esempio, a partire dai due file <code>inputFileOne.csv</code> e <code>inputFileTwo.csv</code>, presenti <a href="https://github.com/ondata/guidaVisiData/tree/master/dati">qui</a> si procede in questo modo:</p>
+<ul>
+<li>si apre la shell e si va nella cartella che contiene i file da concatenare;</li>
+<li>si scrive <code>vd</code> e si preme <code>Invio</code>;</li>
+<li>si seleziona la prima voce <code>DirSheet for the current directory</code> e si preme <code>invio</code>;</li>
+<li>si selezionano con <code>s</code> i due file;</li>
+<li>si preme <code>g Invio</code> per aprirli entrambi;</li>
+<li>si apre il foglio dei fogli con <code>Shift+s</code>;</li>
+<li>si selezionano  <code>inputFileOne.csv</code> e <code>inputFileTwo.csv</code> con <code>s</code>;</li>
+<li>si preme <code>&amp;</code> per attivare la concatenazione;</li>
+<li>si preme <code>Ctrl+X</code> per il menu;</li>
+<li>si seleziona <code>append</code> e poi si preme <code>Invio</code>.</li>
+</ul>
+<p>Si avrà a video l'unione dei due file di input (in <a href="http://youtu.be/NJ8FBYI-WGE?hd=1">questo video</a> una replica di quanto descritto, per versioni <code>vd &lt; 2</code>).</p>
+<h3 id="tabelle-pivot">Tabelle Pivot<a class="headerlink" href="#tabelle-pivot" title="Permanent link">↵</a></h3>
+<p>Ecco ad esempio come creare quella che da conto del numero di mezzi per marca, suddivisi per provincia:</p>
+<ul>
+<li>si va nella colonna <code>marca</code> e si imposta come colonna chiave, premendo <code>!</code>;</li>
+<li>si va poi nella colonna <code>provincia_residenza</code> e si pigia <code>Shift+w</code>;</li>
+<li>si ottiene la tabella pivot desiderata.</li>
+</ul>
+<p><img alt="" src="../imgs/24_pivot.png" /></p>
+<p>Se invece del conteggio delle occorrenze si volesse (a partire da un altro campo) calcolare un altro dato aggregato  - come ad esempio l'età media per marca e provincia - si può procedere in questo modo:</p>
+<ul>
+<li>si va nella colonna <code>eta_intestatario</code> e si imposta a numero intero, pigiando su <code>#</code>;</li>
+<li>si preme <code>+</code>, poi in basso a sinistra nel <em>prompt</em> si scrive <code>avg</code> e infine si dà <code>Invio</code>;
+si va di nuovo nella colonna <code>provincia_residenza</code> e si pigia <code>Shift+w</code>.</li>
+</ul>
+<p>In output, per ogni provincia, si avrà quindi la media desiderata.</p>
+<p><img alt="" src="../imgs/27_pivot.png" /></p>
+<h3 id="creare-un-grafico-di-dispersione-scatter-plot">Creare un grafico di dispersione (scatter plot)<a class="headerlink" href="#creare-un-grafico-di-dispersione-scatter-plot" title="Permanent link">↵</a></h3>
+<p>VisiData può stampare a schermo anche dei grafici XY. Non è un suo punto di forza, ma può essere utile per avere una prima e grezza visualizzazione spaziale dell'insieme dei dati.</p>
+<p>Il requisito per crearne uno, è avere due colonne numeriche, da usare come coppia di coordinate. Qualcosa come quella di sotto.</p>
+<table>
+<thead>
+<tr>
+<th>fid</th>
+<th>X</th>
+<th>Y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>12.29</td>
+<td>43.76</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12.16</td>
+<td>43.64</td>
+</tr>
+<tr>
+<td>3</td>
+<td>12.15</td>
+<td>43.65</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12.16</td>
+<td>43.63</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>Per generare il grafico basterà seguire i seguenti passi:</p>
+<ul>
+<li>impostare come numeriche (numeri decimali digitando <code>%</code> sulla colonna, o <code>#</code> per numeri interi) le due colonne con le coordinate;</li>
+<li>impostare come colonna chiave la colonna con le ascisse, selezionandola e digitando <code>!</code>;</li>
+<li>selezionare la colonna con le ordinate e digitare <code>.</code>.</li>
+</ul>
+<p>In output si avrà qualcosa come quella di sotto</p>
+<p><img alt="" src="../imgs/scatterPlot.png" /></p>
+<h3 id="moduli-python">Moduli Python<a class="headerlink" href="#moduli-python" title="Permanent link">↵</a></h3>
+<p>VisiData è un foglio elettronico basato su Python 3. Questo consente di utilizzare al suo interno la galassia dei moduli disponibili per Python.</p>
+<p>Per farlo, bisogna precaricare questi moduli all'avvio di VisiData. Questo si realizza modificando il file di configurazione del programma - si chiama <code>.visidatarc</code> - contenuto nella cartella <em>home</em> dell'utente. Se si vuole ad esempio sfruttare il modulo <code>datetime</code>, si apre in modifica il file <code>.visidatarc</code> e si aggiunge la riga</p>
+<div class="highlight"><pre><span></span><code>from datetime import datetime
+</code></pre></div>
+<p>Poi si salva il file e si fa partire VisiData.</p>
+<p>Se ad esempio si vuole fare un'analisi sulla data di immatricolazione per mese a partire dalla colonna <code>data_immatricolazione</code> e si volesse sfruttare il modulo <code>datetime</code>, si può procedere in questo modo:</p>
+<ul>
+<li>si va nella colonna <code>data_immatricolazione</code>;</li>
+<li>si preme <code>=</code>;</li>
+<li>si scrive nel prompt <code>datetime.strptime(data_immatricolazione, '%Y-%m-%d %H:%M:%S').month</code> e si pigia <code>Invio</code>.</li>
+</ul>
+<p>Si ottiene qualcosa come quella di sotto:</p>
+<p><img alt="" src="../imgs/26_moduli.png" /></p>
+<p>E a questo punto si può rinominare la colonna premendo <code>^</code>, scrivendo "mese" e poi premendo <code>Invio</code>. E poi creare il foglio delle frequenze della colonna <code>mese</code>, pigiando <code>Shift+f</code> e scoprire che in Abruzzo si immatricola soprattutto a gennaio.</p>
+<p><img alt="" src="../imgs/27_moduli.png" /></p>
+<p><strong>NOTA BENE</strong>: le funzioni del modulo <code>datetime</code> sono disponibili in modo nativo per le colonne già impostate (come tipo) a data. Quanto scritto sopra vale soprattutto come guida al come precaricare e utilizzare un modulo Python in VisiData.</p>
+<h3 id="salvare-un-flusso-di-lavoro">Salvare un flusso di lavoro<a class="headerlink" href="#salvare-un-flusso-di-lavoro" title="Permanent link">↵</a></h3>
+<h4 id="introduzione">Introduzione<a class="headerlink" href="#introduzione" title="Permanent link">↵</a></h4>
+<p>In <strong>VisiData</strong> è possibile salvare il <a href="https://www.visidata.org/docs/save-restore/">log delle operazione fatte</a> e riutilizzarlo per applicarle nuovamente al file di input.</p>
+<p>Se ad esempio a partire da <a href="../risorse/input.csv">questo file <code>CSV</code></a> (sotto l'anteprima) si volessero cancellare tutte le righe che contengono il solo carattere <code>a</code> nella prima colonna e infine salvare l'<em>output</em>, la procedura è:</p>
+<ul>
+<li><code>vd input.csv</code>;</li>
+<li>posizionarsi nella prima colonna e pigiare <kbd>|</kbd> per attivare la selezione tramite espressione regolare, scrivere <code>^a$</code> e premere <kbd>INVIO</kbd>. Verrà fatta la selezione descritta;</li>
+<li>pigiare in sequenza <kbd>g</kbd> e <kbd>d</kbd> per cancellare le righe selezionate;</li>
+<li>poi <kbd>CTRL+s</kbd>;</li>
+<li>e infine scegliere un nome di output (ad esempio <code>output.csv</code>) e pigiare <kbd>INVIO</kbd> per salvare il file.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field1</th>
+<th>field2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>0</td>
+</tr>
+<tr>
+<td>b</td>
+<td>3</td>
+</tr>
+<tr>
+<td>a</td>
+<td>4</td>
+</tr>
+<tr>
+<td>c</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Per salvare la procedura di sopra in un file di log, bisognerà premere <kbd>CTRL+d</kbd>, scegliere un nome per salvare il file (ad esempio <code>cancella_le_a.vd</code>) e pigiare <kbd>INVIO</kbd>.</p>
+<p>Il file di log salvato avrà un contenuto come quello sottostante (<a href="#nota-sul-file-di-log">è un file <code>TSV</code></a>), in cui sono "mappate" tutte le operazioni fatte:</p>
+<table>
+<thead>
+<tr>
+<th>sheet</th>
+<th>col</th>
+<th>row</th>
+<th>longname</th>
+<th>input</th>
+<th>keystrokes</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>global</td>
+<td></td>
+<td>null_value</td>
+<td>set-option</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>open-file</td>
+<td>input.csv</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>input</td>
+<td>field1</td>
+<td></td>
+<td>select-col-regex</td>
+<td>^a$</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>input</td>
+<td></td>
+<td></td>
+<td>delete-selected</td>
+<td></td>
+<td>gd</td>
+<td>delete (cut) selected rows and move them to clipboard</td>
+</tr>
+<tr>
+<td>input</td>
+<td></td>
+<td></td>
+<td>save-sheet</td>
+<td>output.csv</td>
+<td>^S</td>
+<td>save current sheet to filename in format determined by extension (default .tsv)</td>
+</tr>
+</tbody>
+</table>
+<p>Per riapplicare la stessa procedura al file, senza interagire con lo schermo, il comando da lanciare è:</p>
+<div class="highlight"><pre><span></span><code>vd -b -p cancella_le_a.vd
+</code></pre></div>
+<ul>
+<li><code>-b</code> per eseguire VisiData senza attivarne l'interfaccia;</li>
+<li><code>-p</code> per replicare un file di log.</li>
+</ul>
+<p>Se questo comando si lancia dopo avere già creato il file di <em>output</em>, si avrà un messaggio di errore, che avvisa che il file esiste già e non può essere sovrascritto.<br>
+Per fare in modo che venga sovrascritto bisognerà aggiungere l'opzione <code>-y</code>:</p>
+<div class="highlight"><pre><span></span><code>vd -y -b -p cancella_le_a.vd
+</code></pre></div>
+<p>A schermo verrà restituito l'elenco delle operazione svolte:</p>
+<div class="highlight"><pre><span></span><code>opening cancella_le_a.vd as vd
+&quot;input.csv&quot;
+opening input.csv as csv
+select rows matching regex in current column
+&quot;^a$&quot;
+search wrapped
+2 matches for /^a$/
+selected 2 rows
+delete (cut) selected rows and move them to clipboard
+copied 2 rows to clipboard
+deleted 2 rows
+save current sheet to filename in format determined by extension (default .tsv)
+&quot;output.csv&quot;
+saving 1 sheets to output.csv as csv
+replay complete
+</code></pre></div>
+<h4 id="applicare-lo-stesso-flusso-a-un-file-diverso-ma-omologo">Applicare lo stesso flusso a un file diverso, ma omologo<a class="headerlink" href="#applicare-lo-stesso-flusso-a-un-file-diverso-ma-omologo" title="Permanent link">↵</a></h4>
+<p>Spesso si ha la necessità di <strong>applicare una stessa procedura ad altri file</strong>, con la <strong>stessa struttura</strong>, ma con <strong>contenuti differenti</strong>.<br>
+Per utilizzare il file di log creato con un file diverso da <code>input.csv</code>, bisognerà modificare il file di log (si modifica con qualsiasi editor di testo):</p>
+<ul>
+<li>rimuovere la riga con il riferimento a <code>input.csv</code></li>
+<li>rimuovere il riferimento al nome del foglio (qui è <code>input</code>, come il nome del file).</li>
+</ul>
+<p>Diventerà quindi:</p>
+<table>
+<thead>
+<tr>
+<th>sheet</th>
+<th>col</th>
+<th>row</th>
+<th>longname</th>
+<th>input</th>
+<th>keystrokes</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>global</td>
+<td></td>
+<td>null_value</td>
+<td>set-option</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>field1</td>
+<td></td>
+<td>select-col-regex</td>
+<td>^a$</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>delete-selected</td>
+<td></td>
+<td>gd</td>
+<td>delete (cut) selected rows and move them to clipboard</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>save-sheet</td>
+<td>output.csv</td>
+<td>^S</td>
+<td>save current sheet to filename in format determined by extension (default .tsv)</td>
+</tr>
+</tbody>
+</table>
+<p>Fatto questo, il comando da usare con un nuovo file denominato ad esempio <code>input_nuovo.csv</code> sarà:</p>
+<div class="highlight"><pre><span></span><code>vd -y -b -p cancella_le_a.vd input_nuovo.csv
+</code></pre></div>
+<p>In output verrà creato il file <code>output.csv</code>.</p>
+<p>Se si vuole creare un file di output con nome diverso, si deve cancellare dal file di log la riga in cui si fa riferimento a <code>output.csv</code> e lanciare il comando:</p>
+<div class="highlight"><pre><span></span><code>vd -y -b -p cancella_le_a.vd input_nuovo.csv -o output_nuovo.csv
+</code></pre></div>
+<h4 id="nota-sul-file-di-log">Nota sul file di log<a class="headerlink" href="#nota-sul-file-di-log" title="Permanent link">↵</a></h4>
+<p>Si tratta di un TSV, quindi <strong>è possibile leggerlo e modificarlo proprio con VisiData</strong>:</p>
+<p><img alt="" src="../risorse/vd_log.gif" /></p>
+<h3 id="soluzione-problemi">Soluzione problemi<a class="headerlink" href="#soluzione-problemi" title="Permanent link">↵</a></h3>
+<h4 id="riga-attiva-di-colore-nero">Riga attiva di colore nero<a class="headerlink" href="#riga-attiva-di-colore-nero" title="Permanent link">↵</a></h4>
+<p>Quando si usa VisiData su Windows Subsystem for Linux, la riga attiva risulta invisibile perché tutta nera.</p>
+<p>Per fare in modo che torni "visibile" bisogna modificare il file di configurazione di VisiData. Questo file di <em>default</em> non esiste: si deve trovare nella home dell'utente (quindi in <code>~</code>) e si deve nominare come <code>.visidatarc</code>.</p>
+<p>Questi i passi:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">## vai nella cartella home dell&#39;utente</span>
+<span class="nb">cd</span> ~
+<span class="c1">## nano è un editor di testo, si installa con &quot;sudo apt-get install nano.</span>
+<span class="c1">## Si può esare usare qualsiasi editor per modificare il file</span>
+nano .visidatarc
+</code></pre></div>
+<p>Si aprirà il file <code>.visidatarc</code> a cui bisognerà aggiungere le stringhe sottostanti e poi salvare il file.</p>
+<div class="highlight"><pre><span></span><code>options.color_key_col=&#39;&#39;
+options.color_selected_row=&#39;yellow&#39;
+options.color_note_type=&#39;yellow&#39;
+options.color_graph_hidden=&#39;blue&#39;
+options.color_column_sep=&#39;blue&#39;
+options.null_value=&quot;&quot;
+options.color_key_col=&quot;blue&quot;
+</code></pre></div>
+<h4 id="caratteri-non-leggibili-in-windows-subsystem-for-linux">Caratteri non leggibili in Windows Subsystem for Linux<a class="headerlink" href="#caratteri-non-leggibili-in-windows-subsystem-for-linux" title="Permanent link">↵</a></h4>
+<p>Se si usa VisiData in Windows Subsystem for Linux, alcuni caratteri possono risultare non leggibili. Questo dipende dal font usato.</p>
+<p>Per cambiarlo:</p>
+<ol>
+<li>click con il destro del mouse sulla barra;</li>
+<li>e scegliere Proprietà.</li>
+</ol>
+<p><img alt="" src="../imgs/cambiareCarattere.png" /></p>
+<p>Infine si consiglia il font di sotto:</p>
+<p><img alt="" src="../imgs/caratteriNonLeggibili.png" /></p>
+<h3 id="ricette">Ricette<a class="headerlink" href="#ricette" title="Permanent link">↵</a></h3>
+<h4 id="salvare-una-tabella-html-in-csv-a-partire-da-una-pagina-web">Salvare una tabella HTML in CSV, a partire da una pagina web<a class="headerlink" href="#salvare-una-tabella-html-in-csv-a-partire-da-una-pagina-web" title="Permanent link">↵</a></h4>
+<p>In questo esempio il presupposto è che si voglia trasformare in CSV una tabella HTML presente in una pagina web, in cui ci sono più tabelle. Il punto di partenza è quello di estrarre dalla pagina sorgente, una pagina HTML che contiene soltanto la tabella di interesse.</p>
+<p>La pagina di esempio è:<br><a href="https://web.archive.org/web/20190618071304/http://www.sias.regione.sicilia.it/NHEOWLH140_00_1.html">https://web.archive.org/web/20190618071304/http://www.sias.regione.sicilia.it/NHEOWLH140_00_1.html</a></p>
+<p>Questa è composta da diverse tabelle.</p>
+<p><img alt="" src="../imgs/table.png" /></p>
+<p>Quella di interesse è l'unica composta da più di 7 colonne, e la query XPATH per estrarla è <code>//table[count(tr/td)&gt;7]</code>.</p>
+<p>La pagina di origine ha l'<em>encoding</em> in <code>ISO-8859-1</code>, ed è da convertire in <code>UTF-8</code>.</p>
+<p>Per scaricare la pagina, cambiarne l'<em>encoding</em> ed estrarre la tabella di interesse il comando può essere</p>
+<div class="highlight"><pre><span></span><code>curl <span class="s2">&quot;http://www.sias.regione.sicilia.it/NHEOWLH140_00_1.html&quot;</span> <span class="p">|</span> <span class="se">\</span>
+iconv -f ISO-8859-1 -t utf-8  <span class="p">|</span> <span class="se">\</span>
+scrape -be <span class="s1">&#39;//table[count(tr/td)&gt;7]&#39;</span>
+</code></pre></div>
+<p>L'<em>utility</em> usata sopra per fare la <em>query</em> <code>XPATH</code> è <a href="https://github.com/aborruso/scrape-cli">scrape-cli</a>.<br>
+In output si ha una pagina web che contiene soltanto la tabella di interesse.</p>
+<p>Per passarla a VisiData bisognerà modificare così lo script:</p>
+<div class="highlight"><pre><span></span><code>curl <span class="s2">&quot;http://www.sias.regione.sicilia.it/NHEOWLH140_00_1.html&quot;</span> <span class="p">|</span> <span class="se">\</span>
+iconv -f ISO-8859-1 -t utf-8  <span class="p">|</span> <span class="se">\</span>
+scrape -be <span class="s1">&#39;//table[count(tr/td)&gt;7]&#39;</span> <span class="p">|</span> <span class="se">\</span>
+vd -f html
+</code></pre></div>
+<p>Come risultato si aprirà la finestra di sotto. Per aprire la tabella sarà necessario premere <code>INVIO</code> e poi si potrà salvare la tabella in CSV (o altri formati) digitando <code>CTRL+ s</code>.</p>
+<p><img alt="" src="../imgs/htmltable.png" /></p>
+<p>Se si vuole inserire nello script anche la procedura di salvataggio, bisogna modificare lo script in questo modo:</p>
+<div class="highlight"><pre><span></span><code>curl <span class="s2">&quot;http://www.sias.regione.sicilia.it/NHEOWLH140_00_1.html&quot;</span> <span class="p">|</span> <span class="se">\</span>
+iconv -f ISO-8859-1 -t utf-8  <span class="p">|</span> <span class="se">\</span>
+scrape -be <span class="s1">&#39;//table[count(tr/td)&gt;7]&#39;</span> <span class="p">|</span> <span class="se">\</span>
+vd -b -f html -o out.csv -p dive.vd
+</code></pre></div>
+<p>Note:</p>
+<ul>
+<li><code>-b</code> è per eseguire VisiData senza interfaccia;</li>
+<li><code>-p dive.vd</code> per eseguire dei comandi (qui semplicemente l'apertura della tabella a partire dalla finestra iniziale di sopra).</li>
+</ul>
+<p>Nel file <a href="../dati/dive.vd"><code>dive.vd</code></a> c'è il seguente contenuto.</p>
+<div class="highlight"><pre><span></span><code>sheet   col row longname    input   keystrokes  comment
+            open-file   -   o
+-       0   dive-row        ^J
+</code></pre></div>
+<p>Il file di sopra è un file di log di VisiData (vedi <a href="#Salvare-un-flusso-di-lavoro">sezione dedicata</a>). Tutte le operazioni fatte in VisiData finiscono in un log che può essere visualizzato e salvato. Quindi è possibile salvare la visualizzazione dell'elenco delle tabelle e poi l'apertura di quella di interesse.</p>
+<p>Per creare questo di sopra:</p>
+<ul>
+<li>arrivare a visualizzare la tabella su VisiData;</li>
+<li>digitare <code>INVIO</code>;</li>
+<li>digitate <code>SHIFT + d</code> per visualizzare il log dei comandi;</li>
+<li>e infine <code>CTRL + s</code> per salvare il file <code>dive.vd</code>.</li>
+</ul>
+<h3 id="fare-proposte-eo-chiedere-supporto">Fare proposte e/o Chiedere supporto<a class="headerlink" href="#fare-proposte-eo-chiedere-supporto" title="Permanent link">↵</a></h3>
+<p>Il luogo dove farlo è senz'altro questo <a href="https://github.com/saulpw/visidata/issues">https://github.com/saulpw/visidata/issues</a>. È bene farlo scrivendo sempre la versione di VisiData utilizzata, allegare i dati per replicare eventuali problemi riscontrati, documentare la procedura che si vuole realizzare.</p>
+<h3 id="note-finali">Note finali<a class="headerlink" href="#note-finali" title="Permanent link">↵</a></h3>
+<p>Il grande <strong>Jeremy Singer Vine</strong> lo usa da molto più tempo di me e ha creato la migliore guida introduttiva dedicata in inglese <a href="https://jsvine.github.io/intro-to-visidata/">https://jsvine.github.io/intro-to-visidata/</a>, di cui sono felice di essere nei <a href="https://jsvine.github.io/intro-to-visidata/#acknowledgments">ringraziamenti</a>. Ne ho attinto a piene mani per scrivere questo post e colgo l'occasione per <strong>ringraziarlo di cuore</strong> pubblicamente.</p>
+<p>È un'applicazione molto bella, che probabilmente per alcuni diverrà (come è adesso per me) di uso quotidiano.
+<br><a href="https://jsvine.github.io/intro-to-visidata/the-big-picture/what-is-visidata/#why-not-use-visidata">Jeremy</a> afferma che per analisi complesse, analisi geospaziali, <em>data literature</em> è meglio usare altro. Mi sembra sensato.</p>
+<p>Non sostituisce R o Pandas, ma li può certamente affiancare e spesso precedere nel workflow di lavoro sui dati. È un altro strumento che consiglio di aggiungere nella cassetta degli attrezzi.</p>
+<p>Lo sviluppatore principale e chi collabora con lui sono molto attenti alle richieste e alle proposte che vengono dall'esterno, in una bella mescolanza di sensibilità "tecnologica" e umana. <br>In queste settimane ho aperto diverse <em>issue</em> a cui è stato dato sempre riscontro. Alcune erano richieste da uomo primitivo, altre erano buone: confesso di essere <strong>orgoglioso</strong> di avere avuto degli effetti nel rilascio dell'ultima versione (la 1.5.1) e di essere citato più volte nelle <a href="https://github.com/saulpw/visidata/releases/tag/v1.5.1">note di rilascio</a>. Ringrazio molto <a href="http://saul.pw/"><strong>Saul Pwanson</strong></a> e <a href="https://github.com/anjakefala"><strong>Anja Kefala</strong></a>.</p>
+<p><del>A breve gli proporrò l'integrazione in lettura e scrittura dei <a href="https://frictionlessdata.io/specs/data-package/"><code>datapackage</code></a>, in modo da estendere la qualità e le modalità di lavoro su dati ben descritti e strutturati.</del> (<a href="https://github.com/saulpw/visidata/issues/237">fatto</a>)</p>
+<p>Qui vorremmo <strong>aggiornare</strong> e <strong>arricchire</strong> nel tempo i testi e si accettano anche <strong>proposte</strong> di <strong>integrazioni</strong>, <strong>correzioni</strong> e <strong>modifiche</strong>.</p>
+<hr />
+<h3 id="url-consigliati">URL consigliati<a class="headerlink" href="#url-consigliati" title="Permanent link">↵</a></h3>
+<ul>
+<li>la guida di <strong>Jeremy Singer Vine</strong> <a href="https://jsvine.github.io/intro-to-visidata/">https://jsvine.github.io/intro-to-visidata/</a></li>
+<li>le ricette sul sito ufficiale <a href="http://visidata.org/docs/">http://visidata.org/docs/</a>;</li>
+<li>la documentazione ufficiale <a href="http://visidata.org/man/">http://visidata.org/man/</a>;</li>
+<li>la playlist YouTube a cura dell'autore <a href="https://www.youtube.com/playlist?list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W">https://www.youtube.com/playlist?list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W</a>;</li>
+<li>la lista visuale degli shortcut da tastiera <a href="http://visidata.org/docs/kblayout/">http://visidata.org/docs/kblayout/</a>.</li>
+</ul>
+                
+              
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a href="https://twitter.com/ondatait" title="@ondatait" target="_blank">By @ondatait </a> | <a href="https://gbvitrano.github.io/guidaVisiData/privacy/" title="Informativa privacy estesa" target="_parent">Privacy</a> | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" title="Se non specificato diversamente, tutti i contenuti sono soggetti alla licenza Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale (CC BY-NC-SA 4.0)" target="_blank" class="link-dark text-decoration-none">CC BY-NC-SA 4.0</a>
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://gbvitrano.github.io/workshop-estate-gis-2021/" target="_blank" rel="noopener" title="gbvitrano.github.io" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M280.37 148.26 96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47 488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+      </a>
+    
+      
+      
+      <a href="http://twitter.com/opendatasicilia" target="_blank" rel="noopener" title="account twitter" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.facebook.com/groups/opendatasicilia/" target="_blank" rel="noopener" title="gruppo facebook" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://github.com/gbvitrano/MaterialMkDocs-gb" target="_blank" rel="noopener" title="Repoisitory GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="http://twitter.com/opendatasicilia" target="_blank" rel="noopener" title="gruppo Telegram" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://groups.google.com/forum/#!forum/opendatasicilia" target="_blank" rel="noopener" title="mailing list OpenDataSicilia" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+      </a>
+    
+      
+      
+      <a href="../feed_rss_created.xml" target="_blank" rel="noopener" title="Feed RSS" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+      </a>
+    
+      
+      
+      <a href="../Guida_VisiData.pdf" target="_blank" rel="noopener" title="Scarica il file PDF (2.3 mb)" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105 279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.instant", "navigation.tabs", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copia", "clipboard.copied": "Copiato", "search.config.lang": "it", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Cerca", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+        <script src="../js/print-site-instant-loading.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../stylesheets/extra.js"></script>
+      
+    
+  </body>
+</html>

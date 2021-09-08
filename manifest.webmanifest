@@ -1,0 +1,10 @@
+{
+    "name": "VisiData: il coltellino svizzero per i dati, che probabilmente non conosci",
+    "short_name": "Guida VisiData",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "VisiData è un fantastico strumento open source per esplorare e manipolare dati. Mette insieme la chiarezza di un foglio di calcolo, con l'efficienza del terminale e la potenza di Python, in una utility leggera in grado di gestire milioni di righe con facilità.",
+    "lang": "it-IT",
+    "theme_color": "indigo"
+}
